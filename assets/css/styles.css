@@ -1241,6 +1241,10 @@ body.container.bio {
   background-color: #ffffff;
 }
 
+#sidebar #navigation .harmburger svg path {
+  fill: #ffffff;
+}
+
 #sidebar nav ul {
   display: -ms-grid;
   display: grid;
@@ -1625,48 +1629,39 @@ body.sidebar-opened .copyright {
 }
 
 .harmburger {
-  padding: 6.25px 0px 6.25px 12.5px;
+  padding: 0px 0px 0px 12.5px;
   display: none;
   z-index: 2;
+  grid-gap: 7px;
 }
 
-.harmburger .icon-bar {
+.harmburger .icon {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 7px;
+}
+
+.harmburger .icon .icon-bar {
   display: block;
   width: 35px;
-  height: 1px;
-  -webkit-transition: all 0.5s cubic-bezier(0.7, 0, 0.3, 1) !important;
-  transition: all 0.5s cubic-bezier(0.7, 0, 0.3, 1) !important;
+  height: 1.5px;
+  -webkit-transition: all 0s cubic-bezier(0.7, 0, 0.3, 1) !important;
+  transition: all 0s cubic-bezier(0.7, 0, 0.3, 1) !important;
   background: #000000;
   text-align: center;
   margin: 0 auto;
 }
 
-.harmburger .icon-bar + .icon-bar {
-  -webkit-transform: none;
-          transform: none;
-  margin-top: 7px;
+.harmburger svg path {
+  fill: #000000;
 }
 
-.harmburger.collapsed .icon-bar + .icon-bar {
-  -webkit-transform: none;
-          transform: none;
-  margin-top: 0px;
+.harmburger.collapsed .icon {
+  grid-gap: 0px;
 }
 
-.harmburger.collapsed .icon-bar:nth-child(1) {
-  opacity: 0;
-  -webkit-transform: translate3d(0, 0px, 0);
-          transform: translate3d(0, 0px, 0);
-}
-
-.harmburger.collapsed .icon-bar:nth-child(2) {
-  -webkit-transform: translate3d(0, -2px, 0) rotate(-45deg);
-          transform: translate3d(0, -2px, 0) rotate(-45deg);
-}
-
-.harmburger.collapsed .icon-bar:nth-child(3) {
-  -webkit-transform: translate3d(0, -3px, 0) rotate(-135deg);
-          transform: translate3d(0, -3px, 0) rotate(-135deg);
+.harmburger.collapsed .icon .icon-bar + .icon-bar {
+  height: 0px;
 }
 
 #footer {
@@ -2044,7 +2039,8 @@ body.sidebar-opened .copyright {
 
 @media (max-width: 1000px) {
   .harmburger {
-    display: block !important;
+    display: -ms-grid !important;
+    display: grid !important;
   }
   #navigation {
     -ms-grid-columns: 1fr auto !important;

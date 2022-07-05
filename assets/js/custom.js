@@ -19,35 +19,18 @@ $(document).ready(function () {
 			$menu.toggleClass("collapsed");
 		}
 	});
-	$(".expand-description").click(function () {
-		var $read_more = $('.expand-description span');
-		var $description = $('#book-details .details .description');
-		$description.toggleClass("show");
-		$read_more.text == 'Read More' ? 'Read Less' : 'Read More';
-	});
+
+	lightbox.option({
+		'resizeDuration': 400,
+		'wrapAround': true,
+		'fadeDuration': 400,
+		'fitImagesInViewport': true,
+		'imageFadeDuration': 400,
+		'resizeDuration': 400,
+		'disableScrolling': true,
+		'alwaysShowNavOnTouchDevices': true
+	})
 });
-
-
-
-
-window.addEventListener('load', function () {
-
-	var $window = $(window);
-	$window.on('scroll', function () {
-		var $nav = $('#navigation.fixed-nav');
-		var height = $nav.outerHeight();
-		var scrollTop = $window.scrollTop();
-		if (scrollTop > height * 2) {
-			$nav.addClass('show');
-		} else {
-			$nav.removeClass('show');
-		}
-
-	});
-});
-
-
-
 
 var pAgree = '1';
 

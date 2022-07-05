@@ -14,6 +14,7 @@
 
     <!-- Stylesheets -->
     <link rel="stylesheet" href="assets/css/styles.css" />
+    <link type="text/css" rel="stylesheet" href="assets/css/lightbox.min.css" />
 
     <link rel="icon" href="favicon.png">
     <link rel="apple-touch-icon" sizes="120x120" href="favicon.png" />
@@ -56,9 +57,12 @@
         </nav>
 
         <button class="harmburger" name="Menu" alt="Menu" type="button">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
+            <span class="icon">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </span>
+            <img class="svg" src="assets/images/icons/harmburger/menu.svg" alt="Menu" width="35px" height="auto">
         </button>
     </section>
 
@@ -78,9 +82,12 @@
             <div class="nav-space"></div>
 
             <button class="harmburger" name="Menu" alt="Menu" type="button">
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
+                <span class="icon">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </span>
+                <img class="svg" src="assets/images/icons/harmburger/close.svg" alt="Menu" width="35px" height="auto">
             </button>
         </section>
 
