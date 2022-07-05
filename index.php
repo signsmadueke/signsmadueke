@@ -1,13 +1,13 @@
 <?php
-$page_name = "My Work";
+$page_name = "Work";
 $title = 'Signs Madueke';
 $tagline = "Graphic Designer";
-$page_description = "Dr. (Pastor) Emmanuel O. Atoe's ministry, through the gifts of the Holy Spirit and the grace of God, has enabled him to motivate, inspire and assist many people by prayer, teaching and counselling.";
+$page_description = "Signs Madueke is a proficient Graphic Designer and book lover. He's currently working remotely with the Prayer Publications team in New Jersey, US.";
 $extraBodyClasses = '';
 require_once 'inc/header.php';
 ?>
 
-<section id="hero">
+<section id="work-hero">
     <h1 class="title">
         I'm a Graphic Designer,
         <br>

@@ -36,12 +36,12 @@
 
         <nav>
             <ul>
-                <li class="<?php if ($page_name == "My Work") {
+                <li class="<?php if ($page_name == "Work") {
                                 echo "active";
                             } ?>">
                     <a href="/">Work</a>
                 </li>
-                <li class="<?php if ($page_name == "About Me") {
+                <li class="<?php if ($page_name == "Bio") {
                                 echo "active";
                             } ?>">
                     <a href="about">Bio</a>
@@ -86,7 +86,7 @@
 
         <nav>
             <ul>
-                <li class="<?php if ($page_name == "My Work") {
+                <li class="<?php if ($page_name == "Work") {
                                 echo "active";
                             } ?>">
                     <a href="/">
@@ -94,7 +94,7 @@
                         <img src="assets/images/work/work.jpg" alt="">
                     </a>
                 </li>
-                <li class="<?php if ($page_name == "About Me") {
+                <li class="<?php if ($page_name == "Bio") {
                                 echo "active";
                             } ?>">
                     <a href="about">
@@ -113,18 +113,18 @@
         <div id="social">
             <ul>
                 <li>
-                    <a href="https://facebook.com/prayermadueke">
-                        <img class="svg" src="assets/images/icons/social/facebook.svg" height="15px" alt="Facebook">
+                    <a href="https://linkedin.com/in/signsmadueke">
+                        <img class="svg" src="assets/images/icons/social/linkedin.svg" height="20px" alt="LinkedIn">
                     </a>
                 </li>
                 <li>
-                    <a href="https://instagram.com/prayermadueke">
-                        <img class="svg" src="assets/images/icons/social/instagram.svg" height="15px" alt="Instagram">
+                    <a href="https://instagram.com/signsmadueke">
+                        <img class="svg" src="assets/images/icons/social/instagram.svg" height="20px" alt="Instagram">
                     </a>
                 </li>
                 <li>
-                    <a href="https://twitter.com/prayermadueke">
-                        <img class="svg" src="assets/images/icons/social/twitter.svg" height="15px" alt="Twitter">
+                    <a href="https://dribbble.com/signsmadueke">
+                        <img class="svg" src="assets/images/icons/social/dribbble.svg" height="20px" alt="Dribbble">
                     </a>
                 </li>
             </ul>
