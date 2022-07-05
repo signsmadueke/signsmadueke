@@ -44,12 +44,12 @@
                 <li class="<?php if ($page_name == "Bio") {
                                 echo "active";
                             } ?>">
-                    <a href="about">Bio</a>
+                    <a href="bio">Bio</a>
                 </li>
                 <li>
-                    <a href="mailto:hi@signsmadueke.com" class="btn btn-chevron btn-link">
+                    <a href="mailto:hi@signsmadueke.com?subject=Hello%20Signs&amp;body=My%20name%20is%3A%0D%0A%0D%0AI%20would%20like%20us%20to%20talk%20about%3A" class="btn btn-chevron btn-link">
                         <span>Email me at hi@signsmadueke.com</span>
-                        <img class="svg" src="assets/images/icons/arrow-top-right.svg">
+                        <img class="svg" src="assets/images/icons/arrow-top-right.svg" alt="Arrow Top Right" height="11px" width="auto">
                     </a>
                 </li>
             </ul>
@@ -69,7 +69,7 @@
             <div id="logo">
                 <a href="/">
                     <div class="logo-text">
-                        <h3 class="logo-name">Signs Madueke</h3>
+                        <h2 class="logo-name">Signs Madueke</h2>
                         <p class="logo-tagline">Graphic Designer</p>
                     </div>
                 </a>
@@ -86,18 +86,14 @@
 
         <nav>
             <ul>
-                <li class="<?php if ($page_name == "Work") {
-                                echo "active";
-                            } ?>">
+                <li>
                     <a href="/">
                         <span>Work</span>
                         <img src="assets/images/work/work.jpg" alt="">
                     </a>
                 </li>
-                <li class="<?php if ($page_name == "Bio") {
-                                echo "active";
-                            } ?>">
-                    <a href="about">
+                <li>
+                    <a href="bio">
                         <span>Bio</span>
                         <img src="assets/images/work/about.jpg" alt="">
                     </a>
@@ -105,26 +101,26 @@
             </ul>
         </nav>
 
-        <a href="mailto:hi@signsmadueke.com" class="btn btn-chevron btn-link">
+        <a href="mailto:hi@signsmadueke.com?subject=Hello%20Signs&amp;body=My%20name%20is%3A%0D%0A%0D%0AI%20would%20like%20us%20to%20talk%20about%3A" class="btn btn-chevron btn-link">
             <span>Email me at hi@signsmadueke.com</span>
-            <img class="svg" src="assets/images/icons/arrow-top-right.svg">
+            <img class="svg" src="assets/images/icons/arrow-top-right.svg" alt="Arrow Top Right" height="11px" width="auto">
         </a>
 
         <div id="social">
             <ul>
                 <li>
                     <a href="https://linkedin.com/in/signsmadueke">
-                        <img class="svg" src="assets/images/icons/social/linkedin.svg" height="20px" alt="LinkedIn">
+                        <img class="svg" src="assets/images/icons/social/linkedin.svg" height="20px" width="auto" alt="LinkedIn">
                     </a>
                 </li>
                 <li>
                     <a href="https://instagram.com/signsmadueke">
-                        <img class="svg" src="assets/images/icons/social/instagram.svg" height="20px" alt="Instagram">
+                        <img class="svg" src="assets/images/icons/social/instagram.svg" height="20px" width="auto" alt="Instagram">
                     </a>
                 </li>
                 <li>
                     <a href="https://dribbble.com/signsmadueke">
-                        <img class="svg" src="assets/images/icons/social/dribbble.svg" height="20px" alt="Dribbble">
+                        <img class="svg" src="assets/images/icons/social/dribbble.svg" height="20px" width="auto" alt="Dribbble">
                     </a>
                 </li>
             </ul>

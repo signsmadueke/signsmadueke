@@ -1132,7 +1132,7 @@ body.dark #navigation.fixed-nav {
   background: transparent !important;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1000px) {
   body.dark #navigation.fixed-nav {
     background: -webkit-gradient(linear, left bottom, left top, from(rgba(10, 26, 78, 0)), color-stop(25%, rgba(10, 26, 78, 0.5)), color-stop(50%, rgba(10, 26, 78, 0.7)), to(rgba(10, 26, 78, 0.9))) !important;
     background: linear-gradient(0deg, rgba(10, 26, 78, 0) 0%, rgba(10, 26, 78, 0.5) 25%, rgba(10, 26, 78, 0.7) 50%, rgba(10, 26, 78, 0.9) 100%) !important;
@@ -1168,16 +1168,26 @@ body.container {
   background-color: #ffffff;
 }
 
-body.container.contact {
-  -ms-grid-rows: 50px 1fr max-content 0px max-content 1fr max-content;
-      grid-template-rows: 50px 1fr -webkit-max-content 0px -webkit-max-content 1fr -webkit-max-content;
-      grid-template-rows: 50px 1fr max-content 0px max-content 1fr max-content;
+body.container.bio {
+  -ms-grid-rows: 82px max-content 1fr max-content;
+      grid-template-rows: 82px -webkit-max-content 1fr -webkit-max-content;
+      grid-template-rows: 82px max-content 1fr max-content;
+  grid-row-gap: 50px;
 }
 
-body.container.about {
-  -ms-grid-rows: 50px 1fr max-content max-content 1fr max-content;
-      grid-template-rows: 50px 1fr -webkit-max-content -webkit-max-content 1fr -webkit-max-content;
-      grid-template-rows: 50px 1fr max-content max-content 1fr max-content;
+@media (max-width: 1000px) {
+  body.container.bio {
+    grid-row-gap: 30px;
+    -ms-grid-rows: 39px max-content 1fr max-content;
+        grid-template-rows: 39px -webkit-max-content 1fr -webkit-max-content;
+        grid-template-rows: 39px max-content 1fr max-content;
+  }
+}
+
+@media (max-width: 1000px) {
+  body.container {
+    grid-row-gap: 30px;
+  }
 }
 
 #sidebar {
@@ -1196,7 +1206,7 @@ body.container.about {
   left: 0;
   right: 0;
   z-index: 2;
-  padding: 100px 30px 30px 30px;
+  padding: 105px 30px 30px 30px;
   -webkit-transform: translate(-100%, 0);
           transform: translate(-100%, 0);
   -webkit-transition: all 0.5s cubic-bezier(0.5, 0, 0, 1) !important;
@@ -1261,9 +1271,14 @@ body.container.about {
   z-index: 1;
   position: absolute;
   left: 0;
-  bottom: 30px;
+  bottom: 20px;
   text-align: center;
   width: 100%;
+  font-family: 'Space Grotesk';
+  font-size: 25px;
+  line-height: 1;
+  font-weight: 700;
+  letter-spacing: -0.04em;
 }
 
 #sidebar nav ul a img {
@@ -1467,7 +1482,7 @@ body.sidebar-opened .copyright {
   z-index: 1;
 }
 
-@media (max-width: 1300px) {
+@media (max-width: 1000px) {
   #navigation {
     padding: 15px 30px;
   }
@@ -1482,7 +1497,7 @@ body.sidebar-opened .copyright {
           transform: all 0.5s cubic-bezier(0.7, 0, 0.3, 1) !important;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1000px) {
   #navigation.fixed-nav {
     position: fixed;
     top: 0;
@@ -1747,287 +1762,10 @@ body.sidebar-opened .copyright {
   background: transparent;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1000px) {
   #space {
     height: 0px;
   }
-}
-
-#bestsellers {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-rows: auto auto;
-      grid-template-rows: auto auto;
-  grid-gap: 30px;
-  max-width: 100%;
-}
-
-@media (max-width: 800px) {
-  #bestsellers {
-    max-width: none;
-    grid-gap: 30px;
-  }
-}
-
-#bestsellers .title {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr auto;
-      grid-template-columns: 1fr auto;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  grid-gap: 10px;
-}
-
-@media (max-width: 800px) {
-  #bestsellers .title {
-    -ms-grid-columns: none;
-        grid-template-columns: none;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    grid-auto-flow: row;
-    grid-auto-rows: -webkit-max-content;
-    grid-auto-rows: max-content;
-  }
-}
-
-#bestsellers .title h3 {
-  -ms-grid-column-align: start;
-      justify-self: start;
-  font-size: 50px;
-  line-height: 1.3em;
-}
-
-#bestsellers .title .btn-chevron {
-  -ms-grid-column-align: end;
-      justify-self: end;
-}
-
-@media (max-width: 800px) {
-  #bestsellers .title .btn-chevron {
-    -ms-grid-column-align: start;
-        justify-self: start;
-  }
-}
-
-#bestsellers .title .btn-link {
-  padding: 5px 0px !important;
-  grid-gap: 7px !important;
-  border: none !important;
-  border-bottom: 1px dashed rgba(158, 78, 34, 0.7) !important;
-  background-color: transparent !important;
-  width: -webkit-max-content !important;
-  width: -moz-max-content !important;
-  width: max-content !important;
-}
-
-#bestsellers .title .btn-link:hover {
-  border-bottom: 1px dashed #9e4e22 !important;
-}
-
-#bestsellers #books {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (minmax(150px, 100%))[4];
-      grid-template-columns: repeat(4, minmax(150px, 100%));
-  grid-gap: 30px;
-  -webkit-box-align: top;
-      -ms-flex-align: top;
-          align-items: top;
-}
-
-@media (max-width: 800px) {
-  #bestsellers #books {
-    -ms-grid-columns: (minmax(130px, 100%))[2];
-        grid-template-columns: repeat(2, minmax(130px, 100%));
-  }
-}
-
-#bestsellers #books .book:nth-child(1) {
-  -webkit-animation-delay: .1s;
-          animation-delay: .1s;
-}
-
-#bestsellers #books .book:nth-child(2) {
-  -webkit-animation-delay: .2s;
-          animation-delay: .2s;
-}
-
-#bestsellers #books .book:nth-child(3) {
-  -webkit-animation-delay: .3s;
-          animation-delay: .3s;
-}
-
-#bestsellers #books .book:nth-child(4) {
-  -webkit-animation-delay: .4s;
-          animation-delay: .4s;
-}
-
-#bestsellers #books .book:before, #bestsellers #books .book::after {
-  display: none;
-}
-
-#bestsellers #books .book:hover {
-  -webkit-filter: brightness(1.1);
-          filter: brightness(1.1);
-}
-
-.book {
-  display: -ms-grid;
-  display: grid;
-  grid-auto-flow: row;
-  grid-gap: 30px;
-  grid-auto-rows: -webkit-max-content;
-  grid-auto-rows: max-content;
-}
-
-.book .book-image {
-  width: 100%;
-  height: auto;
-  position: relative;
-}
-
-.book .book-image .image {
-  position: relative;
-  line-height: 0;
-  border-radius: 3px 5px 5px 3px;
-  height: 100%;
-  width: 100%;
-}
-
-.book .book-image .image:before {
-  content: '';
-  position: absolute;
-  /* top: 0; */
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  height: 100%;
-  -webkit-box-shadow: inset 13px 0px 2px rgba(255, 255, 255, 0.05), inset 5px 0px 5px rgba(10, 26, 78, 0.3), inset -5px 5px 2px rgba(255, 255, 255, 0.15), inset 0px -3px 5px rgba(10, 26, 78, 0.1), inset 0px 3px 5px rgba(10, 26, 78, 0.05);
-          box-shadow: inset 13px 0px 2px rgba(255, 255, 255, 0.05), inset 5px 0px 5px rgba(10, 26, 78, 0.3), inset -5px 5px 2px rgba(255, 255, 255, 0.15), inset 0px -3px 5px rgba(10, 26, 78, 0.1), inset 0px 3px 5px rgba(10, 26, 78, 0.05);
-  border-radius: 3px 5px 5px 3px;
-}
-
-.book .book-image .image:after {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 10px;
-  bottom: 0;
-  width: 3px;
-  height: 100%;
-  background: rgba(10, 26, 78, 0.06);
-  -webkit-box-shadow: 1px 0 3px rgba(255, 255, 255, 0.1);
-          box-shadow: 1px 0 3px rgba(255, 255, 255, 0.1);
-}
-
-.book .book-image .image img {
-  border-radius: 3px 5px 5px 3px;
-}
-
-.book .book-image img {
-  width: 100%;
-  height: auto;
-}
-
-.book .book-image .shadow {
-  -webkit-filter: blur(5px) opacity(0.5) brightness(0.7);
-          filter: blur(5px) opacity(0.5) brightness(0.7);
-  position: absolute;
-  top: 4%;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  z-index: -1;
-  -webkit-transform: scale(0.94);
-          transform: scale(0.94);
-}
-
-.book .book-details {
-  display: -ms-grid;
-  display: grid;
-  grid-auto-flow: row;
-  grid-gap: 10px;
-  grid-auto-rows: -webkit-max-content;
-  grid-auto-rows: max-content;
-}
-
-.book .book-details .book-name {
-  font-size: 25px;
-  line-height: 1.2em;
-  height: -webkit-max-content;
-  height: -moz-max-content;
-  height: max-content;
-  max-height: 60px;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-@media (max-width: 1000px) {
-  .book .book-details .book-name {
-    font-size: 18px !important;
-    line-height: 24px !important;
-    max-height: 48px;
-    height: -webkit-max-content;
-    height: -moz-max-content;
-    height: max-content;
-    font-weight: 500;
-    letter-spacing: 0;
-  }
-  .book .book-details .book-name .btn-chevron {
-    padding: 0;
-  }
-  .book .book-details .book-name .btn-chevron span {
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 18px;
-    color: #444444;
-  }
-  .book .book-details .book-name .btn-chevron svg {
-    height: 8px;
-  }
-}
-
-.book .book-details .btn-chevron {
-  grid-gap: 5px !important;
-  padding: 0;
-}
-
-@media (max-width: 1000px) {
-  .book .book-details .btn-chevron {
-    padding: 0;
-  }
-  .book .book-details .btn-chevron span {
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 18px;
-    color: #444444;
-  }
-  .book .book-details .btn-chevron svg {
-    height: 8px;
-  }
-}
-
-.book:hover .book-image {
-  -webkit-filter: brightness(1.1);
-          filter: brightness(1.1);
-}
-
-.book:hover .book-image .shadow {
-  opacity: 0.7;
-  -webkit-transform: scale(0.96);
-          transform: scale(0.96);
-}
-
-.book:hover .book-name {
-  opacity: 0.7;
-}
-
-.book:hover .btn-chevron {
-  grid-gap: 10px !important;
-  opacity: 1;
 }
 
 #work-hero {
@@ -2084,6 +1822,7 @@ body.sidebar-opened .copyright {
 @media (max-width: 1000px) {
   #works .title {
     font-size: 30px;
+    text-align: left;
   }
 }
 
@@ -2131,1578 +1870,125 @@ body.sidebar-opened .copyright {
           transform: scale(1.1);
 }
 
-#book-details {
+#bio-hero {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 400px 1fr;
-      grid-template-columns: 400px 1fr;
-  grid-gap: 100px;
+  grid-auto-flow: column;
+  grid-gap: 50px;
+  -ms-grid-columns: 600px 1fr;
+      grid-template-columns: 600px 1fr;
+  width: 100%;
 }
 
-@media (max-width: 800px) {
-  #book-details {
+@media (max-width: 1000px) {
+  #bio-hero {
+    grid-gap: 30px;
+    grid-auto-flow: row;
     -ms-grid-columns: none;
         grid-template-columns: none;
-    grid-auto-flow: row;
-    grid-gap: 50px;
-    width: 100%;
-  }
-  #book-details .book-image {
-    width: 90% !important;
-    -ms-grid-column-align: center !important;
-        justify-self: center !important;
-  }
-  #book-details .book-title {
-    text-align: center !important;
-    font-size: 35px !important;
-    line-height: 1.1em !important;
-    padding-bottom: 10px !important;
-  }
-  #book-details .title {
-    text-align: left !important;
   }
 }
 
-#book-details .book-image {
+#bio-hero .image {
   width: 100%;
-  height: -webkit-max-content;
-  height: -moz-max-content;
-  height: max-content;
-  position: relative;
-}
-
-#book-details .book-image .button {
-  display: -ms-grid !important;
-  display: grid !important;
-  grid-auto-flow: column !important;
-  -ms-grid-columns: max-content max-content !important;
-      grid-template-columns: -webkit-max-content -webkit-max-content !important;
-      grid-template-columns: max-content max-content !important;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  grid-gap: 15px !important;
-  width: -webkit-max-content !important;
-  width: -moz-max-content !important;
-  width: max-content !important;
-  -webkit-box-align: center !important;
-      -ms-flex-align: center !important;
-          align-items: center !important;
-  width: 100% !important;
-  background: transparent !important;
-  border: 1px solid rgba(10, 26, 78, 0.1) !important;
-}
-
-#book-details .book-image .button span {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 21px;
-  color: #444444 !important;
-}
-
-#book-details .book-image .button:hover {
-  background: rgba(10, 26, 78, 0.05) !important;
-  border: 1px solid rgba(10, 26, 78, 0.2) !important;
-}
-
-#book-details .book-image .button svg path {
-  fill: #444444;
-}
-
-#book-details .book-image .button svg,
-#book-details .book-image .button img {
-  height: 11px !important;
-}
-
-#book-details .book-image .image {
-  position: relative;
-  line-height: 0;
-  border-radius: 3px 5px 5px 3px;
-  margin-bottom: 50px;
-}
-
-#book-details .book-image .image:before {
-  content: '';
-  position: absolute;
-  /* top: 0; */
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  height: 100%;
-  -webkit-box-shadow: inset 13px 0px 2px rgba(255, 255, 255, 0.05), inset 5px 0px 5px rgba(10, 26, 78, 0.3), inset -5px 5px 2px rgba(255, 255, 255, 0.15), inset 0px -3px 5px rgba(10, 26, 78, 0.1), inset 0px 3px 5px rgba(10, 26, 78, 0.05);
-          box-shadow: inset 13px 0px 2px rgba(255, 255, 255, 0.05), inset 5px 0px 5px rgba(10, 26, 78, 0.3), inset -5px 5px 2px rgba(255, 255, 255, 0.15), inset 0px -3px 5px rgba(10, 26, 78, 0.1), inset 0px 3px 5px rgba(10, 26, 78, 0.05);
-  border-radius: 3px 5px 5px 3px;
-}
-
-#book-details .book-image .image:after {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 10px;
-  bottom: 0;
-  width: 3px;
-  height: 100%;
-  background: rgba(10, 26, 78, 0.06);
-  -webkit-box-shadow: 1px 0 3px rgba(255, 255, 255, 0.1);
-          box-shadow: 1px 0 3px rgba(255, 255, 255, 0.1);
-}
-
-#book-details .book-image .image img {
-  border-radius: 3px 5px 5px 3px;
-}
-
-#book-details .book-image img {
-  width: 100%;
-  height: auto;
-}
-
-#book-details .book-image .shadow {
-  -webkit-filter: blur(10px) opacity(0.5) brightness(0.7);
-          filter: blur(10px) opacity(0.5) brightness(0.7);
-  position: absolute;
-  top: 4%;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  z-index: -1;
-  -webkit-transform: scale(0.94);
-          transform: scale(0.94);
-}
-
-#book-details .details {
   display: -ms-grid;
   display: grid;
-  grid-gap: 50px;
-  grid-auto-rows: -webkit-max-content;
-  grid-auto-rows: max-content;
-}
-
-#book-details .details .title {
-  font-family: 'Gilroy';
-  font-weight: 700;
-  letter-spacing: 0;
-  font-size: 16px;
-  line-height: 35px;
-  border-bottom: 1px solid rgba(10, 26, 78, 0.1);
-  padding-bottom: 5px;
-}
-
-#book-details .details .book-title {
-  padding-bottom: 20px;
-  border-bottom: 1px solid rgba(10, 26, 78, 0.1);
-  font-weight: 700;
-  font-size: 50px;
-  line-height: 1.1em;
-}
-
-#book-details .details .description {
-  display: -ms-grid;
-  display: grid;
-  grid-gap: 20px;
-  grid-auto-rows: -webkit-max-content;
-  grid-auto-rows: max-content;
-}
-
-#book-details .details .description .text {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 30px;
-  max-height: 180px;
-  overflow: hidden;
-}
-
-#book-details .details .description .expand-description {
-  border-top: 1px solid rgba(10, 26, 78, 0.1);
-}
-
-#book-details .details .description .expand-description .svg,
-#book-details .details .description .expand-description img {
-  height: 12px;
-  -webkit-transform: rotate(270deg);
-          transform: rotate(270deg);
-}
-
-#book-details .details .description .expand-description .read-more {
-  display: block;
-}
-
-#book-details .details .description .expand-description .read-less {
-  display: none;
-}
-
-#book-details .details .description .expand-description:hover {
-  border-top: 1px solid rgba(10, 26, 78, 0.3);
-}
-
-#book-details .details .description.show .text {
-  max-height: none;
-}
-
-#book-details .details .description.show .expand-description .svg,
-#book-details .details .description.show .expand-description img {
-  -webkit-transform: rotate(90deg);
-          transform: rotate(90deg);
-}
-
-#book-details .details .description.show .expand-description .read-more {
-  display: none;
-}
-
-#book-details .details .description.show .expand-description .read-less {
-  display: block;
-}
-
-#book-details .details .channels {
-  display: -ms-grid;
-  display: grid;
-  grid-gap: 30px;
   grid-auto-flow: row;
-  grid-auto-rows: -webkit-max-content;
-  grid-auto-rows: max-content;
-}
-
-#book-details .details .channels .formats {
-  display: -ms-grid;
-  display: grid;
-  grid-gap: 50px;
-  grid-auto-flow: column;
-  grid-auto-rows: -webkit-max-content;
-  grid-auto-rows: max-content;
-  -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
-  max-width: 500px;
-}
-
-#book-details .details .channels .formats .format {
-  display: -ms-grid;
-  display: grid;
   grid-gap: 15px;
-  grid-auto-flow: row;
+  grid-auto-rows: -webkit-max-content;
+  grid-auto-rows: max-content;
 }
 
-#book-details .details .channels .formats .format .buy-btn {
-  border: 1px solid rgba(10, 26, 78, 0.1);
-  padding: 15px;
-  display: -ms-grid;
-  display: grid;
-  max-width: 250px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  border-radius: 5px !important;
-}
-
-#book-details .details .channels .formats .format .buy-btn:hover {
-  background: rgba(10, 26, 78, 0.05) !important;
-  border: 1px solid rgba(10, 26, 78, 0.2) !important;
-}
-
-#book-details .details .channels .formats .format .buy-btn svg {
-  max-height: 30px;
+#bio-hero .image img {
   width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border: 2px solid rgba(0, 0, 0, 0.2);
 }
 
-#book-details .details .channels .formats .format .name {
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 15px;
-  letter-spacing: 2px;
+#bio-hero .image h1 {
+  font-family: 'Space Grotesk';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1;
+  letter-spacing: 0.16em;
   text-transform: uppercase;
-}
-
-#book-details .details .channels .formats .format .price {
-  font-family: 'Space Grotesk';
-  font-weight: 900;
-  font-size: 35px;
-  line-height: 30px;
-}
-
-@media (max-width: 800px) {
-  #book-details .details .channels .formats {
-    grid-gap: 30px;
-  }
-}
-
-#book-details .details .attributes {
-  display: -ms-grid;
-  display: grid;
-  grid-gap: 30px;
-  grid-auto-flow: row;
-  grid-auto-rows: -webkit-max-content;
-  grid-auto-rows: max-content;
-}
-
-#book-details .details .attributes .book-attributes {
-  display: -ms-grid;
-  display: grid;
-  grid-gap: 50px;
-  grid-auto-flow: column;
-  grid-auto-columns: -webkit-max-content;
-  grid-auto-columns: max-content;
-  padding-bottom: 30px;
-  border-bottom: 1px solid rgba(10, 26, 78, 0.1);
-}
-
-@media (max-width: 800px) {
-  #book-details .details .attributes .book-attributes {
-    -ms-grid-columns: none;
-        grid-template-columns: none;
-    grid-auto-flow: row;
-    grid-gap: 30px;
-  }
-}
-
-#book-details .details .attributes .book-attributes .pages {
-  display: -ms-grid;
-  display: grid;
-  grid-gap: 15px;
-  grid-auto-flow: column;
-  grid-auto-columns: -webkit-max-content;
-  grid-auto-columns: max-content;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-#book-details .details .attributes .book-attributes .pages img,
-#book-details .details .attributes .book-attributes .pages svg {
-  height: 20px;
-  -ms-grid-column-align: center;
-      justify-self: center;
-}
-
-#book-details .details .attributes .book-attributes .pages img path,
-#book-details .details .attributes .book-attributes .pages svg path {
-  stroke: #444444;
-  opacity: 1;
-}
-
-#book-details .details .attributes .book-attributes .pages p {
-  font-weight: 700;
-}
-
-#book-details .details .attributes .book-attributes .pages p span {
-  font-weight: 500;
-}
-
-#book-details .details .attributes .book-attributes .dimensions {
-  display: -ms-grid;
-  display: grid;
-  grid-gap: 15px;
-  grid-auto-flow: column;
-  grid-auto-columns: -webkit-max-content;
-  grid-auto-columns: max-content;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-#book-details .details .attributes .book-attributes .dimensions img {
-  height: 35px;
-}
-
-#book-details .details .attributes .book-attributes .dimensions p {
-  font-weight: 700;
-}
-
-#book-details .details .attributes .book-attributes .dimensions p span {
-  font-weight: 500;
-}
-
-#other-books {
-  display: -ms-grid;
-  display: grid;
-  grid-auto-flow: column;
-  -ms-grid-columns: max-content 1fr max-content;
-      grid-template-columns: -webkit-max-content 1fr -webkit-max-content;
-      grid-template-columns: max-content 1fr max-content;
-}
-
-#other-books .prev-book {
-  display: -ms-grid;
-  display: grid;
-  grid-auto-flow: row;
-  grid-gap: 20px;
-  justify-items: end;
-  padding: 30px;
-  border: 1px solid rgba(10, 26, 78, 0.1);
-  border-radius: 10px !important;
-  text-align: right;
-}
-
-#other-books .prev-book:hover {
-  background: rgba(10, 26, 78, 0.05) !important;
-  border: 1px solid rgba(10, 26, 78, 0.2) !important;
-}
-
-#other-books .prev-book:hover img {
-  -webkit-box-shadow: 0px 5px 20px -10px rgba(10, 26, 78, 0.2);
-          box-shadow: 0px 5px 20px -10px rgba(10, 26, 78, 0.2);
-}
-
-@media (max-width: 800px) {
-  #other-books .prev-book {
-    padding: 15px;
-    -ms-grid-columns: none;
-        grid-template-columns: none;
-  }
-}
-
-#other-books .prev-book .btn-chevron {
-  padding: 0;
-}
-
-@media (max-width: 800px) {
-  #other-books .prev-book .btn-chevron {
-    padding: 0;
-    -ms-grid-columns: none;
-        grid-template-columns: none;
-  }
-}
-
-@media (max-width: 800px) {
-  #other-books .prev-book .btn-chevron span {
-    display: none;
-  }
-}
-
-#other-books .prev-book .prev-book-details {
-  display: -ms-grid;
-  display: grid;
-  grid-auto-flow: column;
-  -ms-grid-columns: max-content 1fr;
-      grid-template-columns: -webkit-max-content 1fr;
-      grid-template-columns: max-content 1fr;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  grid-gap: 20px;
-}
-
-@media (max-width: 800px) {
-  #other-books .prev-book .prev-book-details {
-    -ms-grid-columns: none;
-        grid-template-columns: none;
-  }
-}
-
-#other-books .prev-book .prev-book-details .name {
-  display: -ms-grid;
-  display: grid;
-  grid-auto-flow: row;
-  grid-gap: 10px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-#other-books .prev-book .prev-book-details .name h4 {
-  text-overflow: ellipsis;
-  overflow: hidden;
-  line-height: 1.1em;
-  max-width: 300px;
-  white-space: nowrap;
-}
-
-#other-books .prev-book .prev-book-details .name div {
-  font-size: 14px;
-  line-height: 24px;
-  overflow: hidden;
-  height: 72px;
-  position: relative;
-  max-width: 300px;
-  font-weight: 500;
-  opacity: 0.8;
-}
-
-@media (max-width: 800px) {
-  #other-books .prev-book .prev-book-details .name {
-    display: none;
-  }
-}
-
-#other-books .prev-book .prev-book-details img {
-  width: 75px;
-  border: 1px solid rgba(10, 26, 78, 0.2);
-  -webkit-box-shadow: 0px 7px 10px rgba(10, 26, 78, 0.15);
-          box-shadow: 0px 7px 10px rgba(10, 26, 78, 0.15);
-  border-radius: 5px;
-}
-
-#other-books .next-book {
-  display: -ms-grid;
-  display: grid;
-  grid-auto-flow: row;
-  grid-gap: 20px;
-  justify-items: start;
-  padding: 30px;
-  border: 1px solid rgba(10, 26, 78, 0.1);
-  border-radius: 10px !important;
-  text-align: left;
-}
-
-#other-books .next-book:hover {
-  background: rgba(10, 26, 78, 0.05) !important;
-  border: 1px solid rgba(10, 26, 78, 0.2) !important;
-}
-
-#other-books .next-book:hover img {
-  -webkit-box-shadow: 0px 5px 20px -10px rgba(10, 26, 78, 0.2);
-          box-shadow: 0px 5px 20px -10px rgba(10, 26, 78, 0.2);
-}
-
-@media (max-width: 800px) {
-  #other-books .next-book {
-    padding: 15px;
-    -ms-grid-columns: none;
-        grid-template-columns: none;
-  }
-}
-
-#other-books .next-book .btn-chevron {
-  padding: 0;
-}
-
-@media (max-width: 800px) {
-  #other-books .next-book .btn-chevron {
-    padding: 0;
-    -ms-grid-columns: none;
-        grid-template-columns: none;
-  }
-}
-
-@media (max-width: 800px) {
-  #other-books .next-book .btn-chevron span {
-    display: none;
-  }
-}
-
-#other-books .next-book .next-book-details {
-  display: -ms-grid;
-  display: grid;
-  grid-auto-flow: column;
-  -ms-grid-columns: max-content 1fr;
-      grid-template-columns: -webkit-max-content 1fr;
-      grid-template-columns: max-content 1fr;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  grid-gap: 20px;
-}
-
-@media (max-width: 800px) {
-  #other-books .next-book .next-book-details {
-    -ms-grid-columns: none;
-        grid-template-columns: none;
-  }
-}
-
-#other-books .next-book .next-book-details .name {
-  display: -ms-grid;
-  display: grid;
-  grid-auto-flow: row;
-  grid-gap: 10px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-#other-books .next-book .next-book-details .name h4 {
-  text-overflow: ellipsis;
-  overflow: hidden;
-  line-height: 1.1em;
-  max-width: 300px;
-  white-space: nowrap;
-}
-
-#other-books .next-book .next-book-details .name div {
-  font-size: 14px;
-  line-height: 24px;
-  overflow: hidden;
-  height: 72px;
-  position: relative;
-  max-width: 300px;
-  font-weight: 500;
-  opacity: 0.8;
-}
-
-@media (max-width: 800px) {
-  #other-books .next-book .next-book-details .name {
-    display: none;
-  }
-}
-
-#other-books .next-book .next-book-details img {
-  width: 75px;
-  border: 1px solid rgba(10, 26, 78, 0.2);
-  -webkit-box-shadow: 0px 7px 10px rgba(10, 26, 78, 0.15);
-          box-shadow: 0px 7px 10px rgba(10, 26, 78, 0.15);
-  border-radius: 5px;
-}
-
-#about-hero .text {
-  display: -ms-grid;
-  display: grid;
-  grid-auto-flow: row;
-  grid-gap: 20px;
-  text-align: center;
-  justify-items: center;
-  max-width: 800px;
-  margin: 0 auto;
-}
-
-#about-hero .text img,
-#about-hero .text svg {
-  width: 100px;
-  height: auto;
-  -ms-grid-column-align: center;
-      justify-self: center;
-}
-
-#about-hero .text img line,
-#about-hero .text svg line {
-  stroke: #9E4E22;
-  opacity: 1;
-}
-
-#about-hero .text h1 {
-  font-size: 45px;
-  line-height: 50px;
-}
-
-#about-the-author {
-  display: -ms-grid;
-  display: grid;
-  grid-gap: 50px;
-  grid-auto-flow: row;
-  max-width: 800px;
-  margin: 0 auto;
-}
-
-#about-the-author p {
-  font-size: 16px;
-  line-height: 1.9em;
-  text-align: justify;
-}
-
-#about-the-author .btn-link {
-  -ms-grid-column-align: center;
-      justify-self: center;
-  padding: 5px 0px !important;
-  grid-gap: 7px !important;
-  border: none !important;
-  border-bottom: 1px dashed rgba(158, 78, 34, 0.7) !important;
-  background-color: transparent !important;
-  width: -webkit-max-content !important;
-  width: -moz-max-content !important;
-  width: max-content !important;
-}
-
-#about-the-author .btn-link:hover {
-  border-bottom: 1px dashed #9e4e22 !important;
-}
-
-#contact-hero .text {
-  display: -ms-grid;
-  display: grid;
-  grid-auto-flow: row;
-  grid-gap: 20px;
-  text-align: center;
-  justify-items: center;
-}
-
-#contact-hero .text img,
-#contact-hero .text svg {
-  width: 100px;
-  height: auto;
-  -ms-grid-column-align: center;
-      justify-self: center;
-}
-
-#contact-hero .text img line,
-#contact-hero .text svg line {
-  stroke: #9E4E22;
-  opacity: 1;
-}
-
-#contact-hero .text h1 {
-  font-size: 45px;
-  line-height: 50px;
-}
-
-#contacts {
-  display: -ms-grid;
-  display: grid;
-  grid-auto-flow: column;
-  grid-gap: 50px;
-  -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
-}
-
-@media (max-width: 800px) {
-  #contacts {
-    grid-gap: 30px;
-    -ms-grid-columns: none;
-        grid-template-columns: none;
-    grid-auto-flow: row;
-    -ms-grid-rows: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
-  }
-}
-
-#contacts a {
-  width: 100%;
-  padding-top: 40%;
-  padding-bottom: 40%;
-  background: rgba(10, 26, 78, 0.05);
-  text-align: center;
-  border-radius: 10px;
-  aspect-ratio: 1 / 1;
-}
-
-#contacts a p {
-  font-size: 22px;
-}
-
-#contacts a:hover {
-  background: rgba(10, 26, 78, 0.1);
-  -webkit-backdrop-filter: blur(5px);
-          backdrop-filter: blur(5px);
-}
-
-#contacts a:hover p {
-  text-decoration: underline;
-}
-
-#devotional-title {
-  max-width: 600px;
-  -ms-grid-column-align: center;
-      justify-self: center;
-  display: -ms-grid;
-  display: grid;
-  grid-auto-flow: row;
-  grid-gap: 30px;
-  grid-auto-rows: -webkit-max-content;
-  grid-auto-rows: max-content;
-  padding: 100px 0px;
-}
-
-#devotional-title .text {
-  display: -ms-grid;
-  display: grid;
-  grid-auto-flow: row;
-  grid-gap: 10px;
-  text-align: center;
-}
-
-#devotional-title .text p {
-  line-height: 30px;
-}
-
-#devotional-title form {
-  display: -ms-grid;
-  display: grid;
-  grid-auto-flow: row;
-  grid-gap: 15px;
-}
-
-#devotional-title form .form-inputs {
-  display: -ms-grid;
-  display: grid;
-  grid-auto-flow: column;
-  grid-gap: 15px;
-  -ms-grid-columns: 1fr max-content;
-      grid-template-columns: 1fr -webkit-max-content;
-      grid-template-columns: 1fr max-content;
-}
-
-@media (max-width: 768px) {
-  #devotional-title {
-    max-width: none;
-  }
-  #devotional-title .text {
-    text-align: left;
-  }
-  #devotional-title form {
-    grid-auto-flow: row;
-    -ms-grid-columns: none;
-        grid-template-columns: none;
-  }
-  #devotional-title form .form-inputs {
-    grid-auto-flow: row;
-    -ms-grid-columns: none;
-        grid-template-columns: none;
-  }
-}
-
-#all-devotionals {
-  display: -ms-grid;
-  display: grid;
-  grid-gap: 30px;
-  width: 100%;
-  padding-bottom: 100px;
-}
-
-#all-devotionals .section-title {
-  font-size: 45px;
-  line-height: 45px;
-  font-family: 'Space Grotesk';
-}
-
-#all-devotionals .devotionals {
-  display: -ms-grid;
-  display: grid;
-  grid-auto-flow: row;
-  grid-gap: 50px;
-  grid-auto-rows: -webkit-max-content;
-  grid-auto-rows: max-content;
-  -ms-grid-columns: (minmax(350px, 28.2%))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(350px, 28.2%));
-}
-
-@media (max-width: 576px) {
-  #all-devotionals .devotionals {
-    -ms-grid-columns: (minmax(250px, 100%))[auto-fit] !important;
-        grid-template-columns: repeat(auto-fit, minmax(250px, 100%)) !important;
-  }
-}
-
-.devotional {
-  display: -ms-grid;
-  display: grid;
-  grid-auto-flow: row;
-  grid-gap: 30px;
-  grid-auto-rows: -webkit-max-content;
-  grid-auto-rows: max-content;
-  padding: 75px 50px;
-  background: rgba(10, 26, 78, 0.05);
-  border-radius: 10px;
-}
-
-@media (max-width: 576px) {
-  .devotional {
-    padding: 45px 30px;
-    background: rgba(10, 26, 78, 0.05);
-    border-radius: 5px;
-  }
-}
-
-.devotional .image {
-  width: 100%;
-  height: auto;
-  position: relative;
-}
-
-.devotional .image:hover {
-  opacity: 0.7;
-}
-
-.devotional .image img {
-  width: 100%;
-  border-radius: 10px;
-}
-
-.devotional .image .shadow {
-  -webkit-filter: blur(10px) opacity(0.5);
-          filter: blur(10px) opacity(0.5);
-  position: absolute;
-  top: 10%;
-  left: 5%;
-  right: 0;
-  width: 90%;
-  height: 90%;
-  z-index: -1;
-}
-
-.devotional .details {
-  display: -ms-grid;
-  display: grid;
-  grid-auto-flow: row;
-  grid-gap: 10px;
-  grid-auto-rows: -webkit-max-content;
-  grid-auto-rows: max-content;
-}
-
-.devotional .details h3 {
-  font-size: 25px;
-  line-height: 33px;
-  text-transform: capitalize;
-  font-family: 'Space Grotesk';
-}
-
-.devotional .details .devotional-author {
-  display: -ms-grid;
-  display: grid;
-  grid-gap: 10px;
-  grid-auto-flow: column;
-  grid-auto-columns: -webkit-max-content;
-  grid-auto-columns: max-content;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: left;
-      -ms-flex-pack: left;
-          justify-content: left;
-}
-
-.devotional .details .devotional-author img {
-  border-radius: 100px;
-  width: 25px;
-  height: 25px;
-}
-
-.devotional .details .devotional-author p {
-  font-size: 16px;
-  font-weight: 500;
-}
-
-.devotional .details .devotional-author p span {
-  opacity: 0.5;
-}
-
-.devotional .details .devotional-date p {
-  font-size: 16px;
-  font-weight: 500;
-}
-
-.devotional .details .devotional-date p span {
-  opacity: 0.5;
-}
-
-.devotional .details .description div {
-  font-size: 16px;
-  line-height: 30px;
-  overflow: hidden;
-  display: -webkit-box;
-  -webkit-line-clamp: 4;
-  height: 150px;
-  position: relative;
-}
-
-.devotional .details .description div:before {
-  content: "";
-  position: absolute;
-  top: 0%;
-  bottom: 0;
-  left: 0%;
-  right: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 1;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(30%, rgba(232, 236, 247, 0)), to(#e8ecf7));
-  background: linear-gradient(180deg, rgba(232, 236, 247, 0) 30%, #e8ecf7 100%);
-}
-
-.devotional .details .btn-chevron {
-  padding: 5px 0px !important;
-  grid-gap: 7px !important;
-  border: none !important;
-  border-bottom: 1px dashed rgba(10, 26, 78, 0.3) !important;
-  background-color: transparent !important;
-  width: -webkit-max-content !important;
-  width: -moz-max-content !important;
-  width: max-content !important;
-}
-
-.devotional .details .btn-chevron:hover {
-  border-bottom: 1px dashed #444444 !important;
-}
-
-.devotional .details .btn-chevron span {
-  color: #444444 !important;
-}
-
-#devotional-header {
-  width: 100%;
-  width: 100%;
-  max-width: 1100px;
-  -ms-grid-column-align: center;
-      justify-self: center;
-  height: auto;
-  position: relative;
-}
-
-#devotional-header.desktop {
-  display: block;
-}
-
-@media (max-width: 576px) {
-  #devotional-header.desktop {
-    display: none;
-  }
-}
-
-#devotional-header.mobile {
   display: none;
 }
 
-@media (max-width: 576px) {
-  #devotional-header.mobile {
+@media (max-width: 1000px) {
+  #bio-hero .image h1 {
+    font-size: 13px;
     display: block;
   }
 }
 
-#devotional-header img {
-  width: 100%;
-  border-radius: 10px;
-}
-
-#devotional-header .shadow {
-  -webkit-filter: blur(10px) opacity(0.5);
-          filter: blur(10px) opacity(0.5);
-  position: absolute;
-  top: 10%;
-  left: 5%;
-  right: 0;
-  width: 90%;
-  height: 90%;
-  z-index: -1;
-}
-
-#devotional-details {
-  text-align: center;
-  -ms-grid-column-align: center;
-      justify-self: center;
+#bio-hero .text {
   display: -ms-grid;
   display: grid;
-  grid-gap: 10px;
   grid-auto-flow: row;
+  grid-gap: 30px;
   grid-auto-rows: -webkit-max-content;
   grid-auto-rows: max-content;
-  padding: 100px 30px;
-  background: rgba(10, 26, 78, 0.1);
-  border-radius: 10px;
-  width: 100%;
-  max-width: 900px;
-  justify-self: center;
-  text-align: center;
 }
 
-#devotional-details .devotional-name {
-  font-family: 'Space Grotesk';
-  color: #0A1A4E;
-}
-
-#devotional-details .devotional-author {
-  display: -ms-grid;
-  display: grid;
-  grid-gap: 10px;
-  grid-auto-flow: column;
-  grid-auto-columns: -webkit-max-content;
-  grid-auto-columns: max-content;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-#devotional-details .devotional-author img {
-  border-radius: 100px;
-  width: 25px;
-  height: 25px;
-}
-
-#devotional-details p {
-  font-size: 16px;
-  font-weight: 500;
-}
-
-#devotional-details p span {
-  opacity: 0.5;
-}
-
-@media (max-width: 576px) {
-  #devotional-details {
-    text-align: left;
-    -ms-grid-column-align: left;
-        justify-self: left;
-  }
-  #devotional-details .devotional-author {
-    -webkit-box-align: left;
-        -ms-flex-align: left;
-            align-items: left;
-    -webkit-box-pack: left;
-        -ms-flex-pack: left;
-            justify-content: left;
-  }
-}
-
-#devotional-post {
-  display: -ms-grid;
-  display: grid;
-  grid-gap: 0px;
-  width: 100%;
-  max-width: 900px;
-  -ms-grid-column-align: center;
-      justify-self: center;
-  text-align: justify;
-  padding: 0px 0 100px 0;
-}
-
-#devotional-post .block {
-  display: -ms-grid;
-  display: grid;
-  grid-gap: 20px;
-}
-
-#devotional-post h3 {
-  border-bottom: 1px solid rgba(10, 26, 78, 0.2);
-  margin-bottom: 20px;
-  padding-bottom: 20px;
-  padding-top: 50px;
-}
-
-#devotional-post .points {
-  display: -ms-grid;
-  display: grid;
-  grid-gap: 20px;
-  padding: 30px;
-  background: rgba(10, 26, 78, 0.05);
-  border: 1px solid rgba(10, 26, 78, 0.2);
-  text-align: justify;
-}
-
-#devotional-post .points ul {
-  list-style-type: square;
-  padding-left: 20px;
-  display: -ms-grid;
-  display: grid;
-  grid-gap: 10px;
-}
-
-#devotional-post .points ul li {
-  font-size: 15px;
-  line-height: 25px;
-}
-
-#devotional-post ol {
-  list-style-type: decimal;
-  padding-left: 30px;
-  display: -ms-grid;
-  display: grid;
-  grid-gap: 10px;
-}
-
-#devotional-post ol li {
-  font-size: 15px;
-  line-height: 25px;
-}
-
-#devotional-post ul {
-  margin: 20px;
-  padding: 20px;
-  list-style-type: square;
-  line-height: 90px !important;
-}
-
-#devotional-post h3 {
-  text-align: left;
-  line-height: 30px;
-  border-bottom: 1px solid rgba(10, 26, 78, 0.2);
-  padding-bottom: 20px;
-  font-family: 'Space Grotesk';
-}
-
-#book-promotion {
-  display: -ms-grid;
-  display: grid;
-  grid-gap: 150px;
-}
-
-#book-promotion .promotion {
-  display: -ms-grid;
-  display: grid;
-  grid-gap: 50px;
-}
-
-#book-promotion .promotion h1 {
-  font-family: 'Space Grotesk';
-  border-bottom: 1px solid rgba(10, 26, 78, 0.2);
-  padding-bottom: 20px;
-  font-size: 40px;
-  line-height: 50px;
-}
-
-.book-horizontal {
-  display: -ms-grid;
-  display: grid;
-  grid-gap: 50px;
-  -ms-grid-columns: max-content 1fr;
-      grid-template-columns: -webkit-max-content 1fr;
-      grid-template-columns: max-content 1fr;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-@media (max-width: 576px) {
-  .book-horizontal {
-    -ms-grid-columns: none;
-        grid-template-columns: none;
-    grid-gap: 30px;
-    grid-auto-flow: row;
-  }
-}
-
-.book-horizontal .book-image {
-  position: relative;
-  line-height: 0;
-  border-radius: 3px 5px 5px 3px;
-}
-
-.book-horizontal .book-image .image {
-  height: 300px;
-  width: auto;
-  position: relative;
-  line-height: 0;
-  border-radius: 3px 5px 5px 3px;
-}
-
-.book-horizontal .book-image .image:before {
-  content: '';
-  position: absolute;
-  /* top: 0; */
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  height: 100%;
-  -webkit-box-shadow: inset 13px 0px 2px rgba(255, 255, 255, 0.05), inset 5px 0px 5px rgba(10, 26, 78, 0.3), inset -5px 5px 2px rgba(255, 255, 255, 0.15), inset 0px -3px 5px rgba(10, 26, 78, 0.1), inset 0px 3px 5px rgba(10, 26, 78, 0.05);
-          box-shadow: inset 13px 0px 2px rgba(255, 255, 255, 0.05), inset 5px 0px 5px rgba(10, 26, 78, 0.3), inset -5px 5px 2px rgba(255, 255, 255, 0.15), inset 0px -3px 5px rgba(10, 26, 78, 0.1), inset 0px 3px 5px rgba(10, 26, 78, 0.05);
-  border-radius: 3px 5px 5px 3px;
-}
-
-.book-horizontal .book-image .image:after {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 10px;
-  bottom: 0;
-  width: 3px;
-  height: 100%;
-  background: rgba(10, 26, 78, 0.06);
-  -webkit-box-shadow: 1px 0 3px rgba(255, 255, 255, 0.1);
-          box-shadow: 1px 0 3px rgba(255, 255, 255, 0.1);
-}
-
-@media (max-width: 576px) {
-  .book-horizontal .book-image .image {
-    height: auto;
-    width: 100%;
-  }
-  .book-horizontal .book-image .image img {
-    width: 100%;
-    height: auto;
-  }
-}
-
-.book-horizontal .book-image img {
-  width: auto;
-  height: 100%;
-  border-radius: 3px 5px 5px 3px;
-}
-
-.book-horizontal .book-image .shadow {
-  -webkit-filter: blur(5px) opacity(0.5) brightness(0.7);
-          filter: blur(5px) opacity(0.5) brightness(0.7);
-  position: absolute;
-  top: 2%;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  z-index: -1;
-  -webkit-transform: scale(0.94);
-          transform: scale(0.94);
-}
-
-.book-horizontal .details {
-  display: -ms-grid;
-  display: grid;
-  grid-gap: 20px;
-}
-
-.book-horizontal .details h3 {
-  line-height: 30px;
-}
-
-.book-horizontal .details p {
-  font-size: 16px;
-  line-height: 30px;
-  overflow: hidden;
-  display: -webkit-box;
-  -webkit-line-clamp: 4;
-  max-height: 150px;
-  position: relative;
-}
-
-.book-horizontal .details p:before {
-  content: "";
-  position: absolute;
-  top: 0%;
-  bottom: 0;
-  left: 0%;
-  right: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 1;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(70%, rgba(255, 255, 255, 0)), to(#FFFFFF));
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 70%, #FFFFFF 100%);
-}
-
-.book-horizontal .details .button {
-  width: -webkit-max-content;
-  width: -moz-max-content;
-  width: max-content;
-  padding: 15px 25px;
-  background-color: #ffffff;
-  border: 1px solid rgba(10, 26, 78, 0.2);
-}
-
-.book-horizontal .details .button:hover {
-  background-color: rgba(10, 26, 78, 0.05);
-  -webkit-box-shadow: 0px 15px 10px -10px rgba(10, 26, 78, 0.05);
-          box-shadow: 0px 15px 10px -10px rgba(10, 26, 78, 0.05);
-  border: 1px solid rgba(10, 26, 78, 0.3);
-}
-
-.book-horizontal .details .button span {
-  color: #444444;
-  letter-spacing: 0;
-  text-transform: capitalize;
-  font-size: 15px;
-  font-weight: 500;
-}
-
-#other-devotionals {
-  display: -ms-grid;
-  display: grid;
-  grid-auto-flow: column;
-  -ms-grid-columns: max-content 1fr max-content;
-      grid-template-columns: -webkit-max-content 1fr -webkit-max-content;
-      grid-template-columns: max-content 1fr max-content;
-}
-
-#other-devotionals .prev-devotional {
+#bio-hero .text .head {
   display: -ms-grid;
   display: grid;
   grid-auto-flow: row;
   grid-gap: 15px;
-  justify-items: start;
-  padding: 30px;
-  border: 1px solid rgba(10, 26, 78, 0.1);
 }
 
-#other-devotionals .prev-devotional:hover {
-  background-color: rgba(10, 26, 78, 0.05);
-  -webkit-box-shadow: 0px 15px 10px -10px rgba(10, 26, 78, 0.05);
-          box-shadow: 0px 15px 10px -10px rgba(10, 26, 78, 0.05);
-}
-
-#other-devotionals .prev-devotional:hover img {
-  -webkit-box-shadow: 0px 5px 20px -10px rgba(10, 26, 78, 0.2);
-          box-shadow: 0px 5px 20px -10px rgba(10, 26, 78, 0.2);
-}
-
-#other-devotionals .prev-devotional:hover .btn-chevron {
-  grid-gap: 20px;
-}
-
-@media (max-width: 1000px) {
-  #other-devotionals .prev-devotional {
-    padding: 15px;
-    -ms-grid-columns: none;
-        grid-template-columns: none;
-  }
-}
-
-@media (max-width: 1000px) {
-  #other-devotionals .prev-devotional .btn-chevron {
-    padding: 0;
-    -ms-grid-columns: none;
-        grid-template-columns: none;
-  }
-}
-
-@media (max-width: 1000px) {
-  #other-devotionals .prev-devotional .btn-chevron span {
-    display: none;
-  }
-}
-
-#other-devotionals .prev-devotional .prev-devotional-details {
-  display: -ms-grid;
-  display: grid;
-  grid-auto-flow: column;
-  -ms-grid-columns: max-content 1fr;
-      grid-template-columns: -webkit-max-content 1fr;
-      grid-template-columns: max-content 1fr;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  grid-gap: 30px;
-}
-
-@media (max-width: 1000px) {
-  #other-devotionals .prev-devotional .prev-devotional-details {
-    -ms-grid-columns: none;
-        grid-template-columns: none;
-  }
-}
-
-#other-devotionals .prev-devotional .prev-devotional-details .name {
-  display: -ms-grid;
-  display: grid;
-  grid-auto-flow: row;
-  grid-gap: 5px;
-  text-align: left;
-}
-
-#other-devotionals .prev-devotional .prev-devotional-details .name h3 {
+#bio-hero .text .head h1 {
   font-family: 'Space Grotesk';
-  text-overflow: ellipsis;
-  overflow: hidden;
-  line-height: 30px;
-  max-width: 300px;
-  white-space: nowrap;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  display: block;
+}
+
+#bio-hero .text .head h2 {
+  font-family: 'Space Grotesk';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 1.3;
+  letter-spacing: -0.03em;
 }
 
 @media (max-width: 1000px) {
-  #other-devotionals .prev-devotional .prev-devotional-details .name h3 {
+  #bio-hero .text .head h1 {
+    font-size: 14px;
     display: none;
+  }
+  #bio-hero .text .head h2 {
+    font-size: 25px;
   }
 }
 
-#other-devotionals .prev-devotional .prev-devotional-details .name p {
-  font-size: 14px;
-  font-weight: 500;
-}
-
-#other-devotionals .prev-devotional .prev-devotional-details .name p span {
-  opacity: 0.5;
-}
-
-@media (max-width: 1000px) {
-  #other-devotionals .prev-devotional .prev-devotional-details .name {
-    display: none;
-  }
-}
-
-#other-devotionals .prev-devotional .prev-devotional-details img {
-  width: 100px;
-  border: 1px solid rgba(10, 26, 78, 0.2);
-  border-radius: 5px !important;
-}
-
-#other-devotionals .next-devotional {
+#bio-hero .text .body {
   display: -ms-grid;
   display: grid;
   grid-auto-flow: row;
   grid-gap: 15px;
-  justify-items: end;
-  padding: 30px;
-  border: 1px solid rgba(10, 26, 78, 0.1);
 }
 
-#other-devotionals .next-devotional:hover {
-  background-color: rgba(10, 26, 78, 0.05);
-  -webkit-box-shadow: 0px 15px 10px -10px rgba(10, 26, 78, 0.05);
-          box-shadow: 0px 15px 10px -10px rgba(10, 26, 78, 0.05);
+#bio-hero .text .body p {
+  font-family: 'Gilroy';
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.8;
 }
 
-#other-devotionals .next-devotional:hover img {
-  -webkit-box-shadow: 0px 5px 20px -10px rgba(10, 26, 78, 0.2);
-          box-shadow: 0px 5px 20px -10px rgba(10, 26, 78, 0.2);
-}
-
-#other-devotionals .next-devotional:hover .btn-chevron {
-  grid-gap: 20px;
-}
-
-@media (max-width: 1000px) {
-  #other-devotionals .next-devotional {
-    padding: 15px;
-    -ms-grid-columns: none;
-        grid-template-columns: none;
-  }
-}
-
-@media (max-width: 1000px) {
-  #other-devotionals .next-devotional .btn-chevron {
-    padding: 0;
-    -ms-grid-columns: none;
-        grid-template-columns: none;
-  }
-}
-
-@media (max-width: 1000px) {
-  #other-devotionals .next-devotional .btn-chevron span {
-    display: none;
-  }
-}
-
-#other-devotionals .next-devotional .next-devotional-details {
-  display: -ms-grid;
-  display: grid;
-  grid-auto-flow: column;
-  -ms-grid-columns: max-content 1fr;
-      grid-template-columns: -webkit-max-content 1fr;
-      grid-template-columns: max-content 1fr;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  grid-gap: 30px;
-}
-
-@media (max-width: 1000px) {
-  #other-devotionals .next-devotional .next-devotional-details {
-    -ms-grid-columns: none;
-        grid-template-columns: none;
-  }
-}
-
-#other-devotionals .next-devotional .next-devotional-details .name {
-  display: -ms-grid;
-  display: grid;
-  grid-auto-flow: row;
-  grid-gap: 5px;
-  text-align: right;
-}
-
-#other-devotionals .next-devotional .next-devotional-details .name h3 {
-  font-family: 'Space Grotesk';
-  text-overflow: ellipsis;
-  overflow: hidden;
-  line-height: 30px;
-  max-width: 300px;
-  white-space: nowrap;
-}
-
-@media (max-width: 1000px) {
-  #other-devotionals .next-devotional .next-devotional-details .name h3 {
-    display: none;
-  }
-}
-
-#other-devotionals .next-devotional .next-devotional-details .name p {
-  font-size: 14px;
-  font-weight: 500;
-}
-
-#other-devotionals .next-devotional .next-devotional-details .name p span {
-  opacity: 0.5;
-}
-
-@media (max-width: 1000px) {
-  #other-devotionals .next-devotional .next-devotional-details .name {
-    display: none;
-  }
-}
-
-#other-devotionals .next-devotional .next-devotional-details img {
-  width: 100px;
-  border: 1px solid rgba(10, 26, 78, 0.2);
-  border-radius: 5px !important;
+#bio-hero .text .body p .btn-link {
+  display: inline;
+  padding: 0px 0px !important;
+  color: #000000;
 }
 
 #error404-hero {
@@ -3718,7 +2004,7 @@ body.sidebar-opened .copyright {
   text-align: center;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1000px) {
   #error404-hero {
     padding: 100px 30px;
   }
@@ -3740,7 +2026,7 @@ body.sidebar-opened .copyright {
   line-height: 133px;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1000px) {
   #error404-hero .error404-text h1 {
     font-size: 75px;
     line-height: 100px;
@@ -3756,7 +2042,7 @@ body.sidebar-opened .copyright {
   place-self: center;
 }
 
-@media (max-width: 1300px) {
+@media (max-width: 1000px) {
   .harmburger {
     display: block !important;
   }
@@ -3770,20 +2056,11 @@ body.sidebar-opened .copyright {
   #navigation .nav-space {
     display: none;
   }
-}
-
-@media (max-width: 1000px) {
-  h2 {
-    font-size: 35px;
-  }
-  h3 {
-    font-size: 30px;
-  }
   .logo-name {
-    font-size: 25px !important;
+    font-size: 20px !important;
   }
   .logo-tagline {
-    font-size: 12px !important;
+    font-size: 10px !important;
   }
   #logo .logo-icon {
     width: 50px !important;
@@ -3805,9 +2082,6 @@ body.sidebar-opened .copyright {
     -ms-grid-column-align: center;
         justify-self: center;
   }
-}
-
-@media (max-width: 768px) {
   .container {
     width: 100%;
     padding-right: 30px;
@@ -3815,21 +2089,15 @@ body.sidebar-opened .copyright {
     margin-right: auto;
     margin-left: auto;
   }
-}
-
-@media (max-width: 576px) {
-  #all-books #books {
-    -ms-grid-columns: (1fr)[2] !important;
-        grid-template-columns: repeat(2, 1fr) !important;
-  }
-  body.dark {
-    background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(4, 12, 37, 0.5)), to(rgba(4, 12, 37, 0.5))), -webkit-gradient(linear, left bottom, left top, from(#061133), color-stop(57.09%, rgba(4, 12, 37, 0.5)), color-stop(87.26%, rgba(4, 12, 37, 0.5)), color-stop(99.16%, rgba(4, 12, 37, 0.8))), url(../images/eoatoe/eoatoe-lg.jpg);
-    background-image: linear-gradient(0deg, rgba(4, 12, 37, 0.5), rgba(4, 12, 37, 0.5)), linear-gradient(0deg, #061133 0%, rgba(4, 12, 37, 0.5) 57.09%, rgba(4, 12, 37, 0.5) 87.26%, rgba(4, 12, 37, 0.8) 99.16%), url(../images/eoatoe/eoatoe-lg.jpg);
-    background-position: center top !important;
-  }
   h1 {
     font-size: 40px;
     line-height: 50px;
+  }
+  h2 {
+    font-size: 35px;
+  }
+  h3 {
+    font-size: 30px;
   }
   h4 {
     font-size: 25px;
@@ -3841,8 +2109,8 @@ body.sidebar-opened .copyright {
     font-size: 15px;
   }
   p {
-    font-size: 15px;
-    line-height: 30px;
+    font-size: 14px;
+    line-height: 1.8;
   }
 }
 /*# sourceMappingURL=styles.css.map */
