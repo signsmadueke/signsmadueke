@@ -8,6 +8,7 @@
 <script src="assets/js/smooth-scroll.js"></script>
 <script src="assets/js/animations.js"></script>
 <script src="assets/js/lightbox.min.js"></script>
+<script src="assets/js/jquery.lazy.min.js"></script>
 </body>
 
 </html>
