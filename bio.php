@@ -1,7 +1,7 @@
 <?php
 $page_name = "Bio";
-$title = 'Signs Madueke';
-$tagline = "Graphic Designer";
+$title = 'Bio';
+$tagline = "Signs Madueke, Graphic Designer";
 $page_description = "Signs Madueke is a proficient Graphic Designer and book lover. He's currently working remotely with the Prayer Publications team in New Jersey, US.";
 $extraBodyClasses = 'bio';
 require_once 'inc/header.php';
