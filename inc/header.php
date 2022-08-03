@@ -56,7 +56,7 @@
             </ul>
         </nav>
 
-        <button class="harmburger" name="Menu" alt="Menu" type="button">
+        <button class="harmburger" name="Menu" aria-label="Menu" alt="Menu" type="button">
             <span class="icon">
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
@@ -81,7 +81,7 @@
 
             <div class="nav-space"></div>
 
-            <button class="harmburger" name="Menu" alt="Menu" type="button">
+            <button class="harmburger" name="Menu" aria-label="Menu" alt="Menu" type="button">
                 <span class="icon">
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
