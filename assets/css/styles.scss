@@ -1728,6 +1728,8 @@ body.sidebar-opened {
 			}
 
 			&.full-width {
+				grid-column: 1 / span 2;
+
 				@media (min-width: 1000px) {
 					grid-column: 1 / span 3;
 				}

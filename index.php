@@ -32,6 +32,15 @@ require_once 'inc/header.php';
         <a class="design" href="assets/images/work/books/3.jpg" data-lightbox="design" data-title="The World We Once Had — by Osigwe Ahmed Momoh">
             <img src="assets/images/work/placeholder/3.jpg" data-src="assets/images/work/books/3.jpg" class="lazy" alt="The World We Once Had — by Osigwe Ahmed Momoh" width="400px" height="auto">
         </a>
+        <a class="design" href="assets/images/work/books/35.jpg" data-lightbox="design" data-title="Treasured Facts and Tips for Adolescents — by Chinweude Ugochukwu">
+            <img src="assets/images/work/placeholder/35.jpg" data-src="assets/images/work/books/35.jpg" class="lazy" alt="Treasured Facts and Tips for Adolescents — by Chinweude Ugochukwu" width="400px" height="auto">
+        </a>
+        <a class="design" href="assets/images/work/books/36.jpg" data-lightbox="design" data-title="Overcoming and Destroying the Spirit of Rejection and Hatred — by Prayer M. Madueke">
+            <img src="assets/images/work/placeholder/36.jpg" data-src="assets/images/work/books/36.jpg" class="lazy" alt="Overcoming and Destroying the Spirit of Rejection and Hatred — by Prayer M. Madueke" width="400px" height="auto">
+        </a>
+        <a class="design" href="assets/images/work/books/37.jpg" data-lightbox="design" data-title="Obesity and Belly Fat Funeral — by Dr. Stephanie Brown">
+            <img src="assets/images/work/placeholder/37.jpg" data-src="assets/images/work/books/37.jpg" class="lazy" alt="Obesity and Belly Fat Funeral — by Dr. Stephanie Brown" width="400px" height="auto">
+        </a>
         <a class="design" href="assets/images/work/books/4.jpg" data-lightbox="design" data-title="The Pathway of Righteousness — by Emmanuel Atoe">
             <img src="assets/images/work/placeholder/4.jpg" data-src="assets/images/work/books/4.jpg" class="lazy" alt="The Pathway of Righteousness — by Emmanuel Atoe" width="400px" height="auto">
         </a>

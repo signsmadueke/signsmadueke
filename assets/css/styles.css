@@ -1868,6 +1868,12 @@ body.sidebar-opened .copyright {
           transform: scale(1.1);
 }
 
+#works .designs .design.full-width {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1 / span 2;
+}
+
 @media (min-width: 1000px) {
   #works .designs .design.full-width {
     -ms-grid-column: 1;
