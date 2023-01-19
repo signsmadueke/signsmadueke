@@ -1422,6 +1422,10 @@ body.sidebar-opened {
 				margin: 0px 15px !important;
 			}
 
+			&:last-child {
+				margin: 0px 0px 0 15px !important;
+			}
+
 			&.with-icon {
 				display: grid;
 				grid-template-columns: max-content max-content;
@@ -1545,79 +1549,72 @@ body.sidebar-opened {
 
 #footer {
 	display: grid;
-	grid-template-columns: 1fr;
+	grid-auto-flow: column;
 	align-items: center;
-	place-self: center;
+	justify-content: space-between;
 
-	≈ #social {
-		justify-self: end;
-		display: grid;
-		grid-auto-flow: column;
-		grid-gap: 10px;
-		align-items: center;
+	@media (max-width: 1000px) {
+		justify-self: center;
+	}
 
-		p {
-			line-height: 20px;
-			font-weight: 400;
-			font-size: 13px;
-			opacity: 0.7;
+	#social {
 
-			&:first-child {
-				padding-right: 15px;
-			}
-		}
-
-		span {
-			width: 25px;
-			height: 1px;
-			background-color: #444444;
-			opacity: 0.6;
-
-			&:first-child {
-				padding-right: 15px;
-			}
-		}
-
-		a {
-			padding: 15px;
-			opacity: 0.6;
-
-			&:hover {
-				opacity: 1;
-			}
-		}
-
-		svg {
-			height: 20px;
-		}
-
-		img {
-			height: 20px;
+		@media (max-width: 1000px) {
+			display: none;
 		}
 
 		ul {
 			display: grid;
-			grid-template-columns: auto auto auto auto;
-			grid-gap: 0px;
-			-webkit-box-align: center;
-			align-items: center;
+			grid-auto-flow: column;
+			grid-gap: 7.5px;
+			justify-content: center;
 
 			li {
 				line-height: 0;
+
+				svg {
+					height: 20px;
+					width: auto;
+
+					path {
+						fill: #000000;
+					}
+				}
+
+
+				&:last-child {
+					a {
+						padding-right: 0;
+					}
+				}
+
+				a {
+					padding: 7.5px;
+
+					&:hover {
+
+						img,
+						svg {
+							opacity: 0.5 !important;
+						}
+					}
+				}
 			}
 		}
+
+	}
+
+	.copyright {
+		color: #444444;
+		justify-self: start;
+		font-style: normal;
+		font-weight: 400;
+		font-size: 13px;
+		line-height: 20px;
+		// opacity: 0.7;
 	}
 }
 
-.copyright {
-	color: #444444;
-	justify-self: start;
-	font-style: normal;
-	font-weight: 400;
-	font-size: 13px;
-	line-height: 20px;
-	// opacity: 0.7;
-}
 
 
 
@@ -1690,53 +1687,198 @@ body.sidebar-opened {
 		}
 	}
 
-	.designs {
+	.case-studies {
 		display: grid;
 		grid-gap: 30px;
 		align-items: start;
-		grid-template-columns: repeat(3, 1fr) !important;
-		// grid-template-columns: repeat(2, minmax(150px, 100%));
-		// align-items: top;
+		grid-auto-flow: column;
 
-		@media (max-width: 1000px) {
-			grid-template-columns: repeat(2, 1fr) !important;
-			grid-gap: 10px;
-		}
-
-		.design {
+		.case-study {
+			background: url(../images/grundge.png), #FFE7E7;
+			outline: 1px solid #cccccc;
+			background-repeat: repeat;
+			background-size: contain;
+			padding: 50px;
 			display: grid;
-			grid-auto-flow: row;
-			grid-gap: 20px;
-			height: 100%;
-			width: 100%;
-			cursor: pointer;
-			overflow: hidden;
-			border: 1px solid rgba(0, 0, 0, 0.15);
+			grid-gap: 30px;
+			grid-auto-flow: column;
+			align-items: center;
+			place-content: center;
 
-			img {
-				transition: all 0.5s cubic-bezier(0.5, 0, 0, 1) !important;
-				width: 100%;
-				height: 100%;
-				object-fit: cover;
-			}
+			.cs-image {
+				position: relative;
+				line-height: 0;
+				overflow: hidden;
+				box-shadow: 4px 4px 0px rgba(0, 0, 0, 0.2);
+				outline: 0.4px solid #cccccc;
 
-			&:hover {
+				&::before {
+					content: "";
+					position: absolute;
+					width: 1.14px;
+					height: 100%;
+					left: 5px;
+					top: 0px;
+					background-color: rgba(0, 0, 0, 0.1);
+				}
+
 				img {
-					filter: brightness(0.5);
-					transform: scale(1.1);
+					width: 220px;
 				}
 			}
 
-			&.full-width {
-				grid-column: 1 / span 2;
+			.cs-text {
+				display: grid;
+				grid-gap: 15px;
+				max-width: 400px;
 
-				@media (min-width: 1000px) {
-					grid-column: 1 / span 3;
+				.category {
+					font-family: 'Space Grotesk';
+					font-style: normal;
+					font-weight: 600;
+					font-size: 16px;
+					line-height: 1;
+					letter-spacing: 0.16em;
+					text-transform: uppercase;
+					display: block;
+				}
+
+				.title {
+					font-family: 'Space Grotesk';
+					font-style: normal;
+					font-weight: 600;
+					font-size: 25px;
+					line-height: 1.3;
+					letter-spacing: -0.03em;
+					text-align: left;
+				}
+
+				.description {
+					font-family: 'Gilroy';
+					font-style: normal;
+					font-weight: 400;
+					line-height: 1.6;
+					margin-top: -10px;
+				}
+
+				.behance-link {
+					padding: 0px;
+					border-bottom: none !important;
+
+					span {
+						border-bottom: 1px dashed rgba(0, 0, 0, 1) !important;
+						padding: 3px 0px;
+					}
+
+					svg {
+						width: 18px;
+						height: 18px;
+
+						path {
+							fill: #053EFF;
+						}
+					}
+				}
+			}
+
+			@media (max-width: 1000px) {
+				padding: 50px 25px;
+				position: relative;
+				overflow: hidden;
+
+
+				.cs-image {
+					position: absolute;
+					height: 100px;
+					width: auto;
+					right: 25px;
+					bottom: -19px;
+					z-index: 0;
+					box-shadow: 1.5px 1.5px 0px rgba(0, 0, 0, 0.1);
+					outline: 0.4px solid #dddddd;
+
+					&::before {
+						width: 0.14px;
+						left: 1.5px;
+					}
+
+					img {
+						width: 100%;
+						height: 100%;
+					}
+				}
+
+				.cs-text {
+					grid-gap: 10px;
+					max-width: none;
+					z-index: 1;
+
+					.category {
+						font-size: 13px;
+						display: block;
+					}
+
+					.title {
+						font-size: 20px;
+					}
+
+					.description {
+						font-size: 14px;
+						margin-top: 0;
+					}
 				}
 			}
 		}
 	}
 }
+
+.designs {
+	display: grid;
+	grid-gap: 30px;
+	align-items: start;
+	grid-template-columns: repeat(3, 1fr) !important;
+	// grid-template-columns: repeat(2, minmax(150px, 100%));
+	// align-items: top;
+
+	@media (max-width: 1000px) {
+		grid-template-columns: repeat(2, 1fr) !important;
+		grid-gap: 10px;
+	}
+
+	.design {
+		display: grid;
+		grid-auto-flow: row;
+		grid-gap: 20px;
+		height: 100%;
+		width: 100%;
+		cursor: pointer;
+		overflow: hidden;
+		outline: 1px solid #cccccc;
+
+		img {
+			transition: all 0.5s cubic-bezier(0.5, 0, 0, 1) !important;
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+
+		&:hover {
+			img {
+				filter: brightness(0.5);
+				transform: scale(1.1);
+			}
+		}
+
+		&.full-width {
+			grid-column: 1 / span 2;
+
+			@media (min-width: 1000px) {
+				grid-column: 1 / span 3;
+			}
+		}
+	}
+}
+
 
 
 

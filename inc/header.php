@@ -96,13 +96,13 @@
                 <li>
                     <a href="/">
                         <span>Work</span>
-                        <img src="assets/images/work/work.jpg" alt="">
+                        <img src="assets/images/work.jpg" alt="">
                     </a>
                 </li>
                 <li>
                     <a href="bio">
                         <span>Bio</span>
-                        <img src="assets/images/work/about.jpg" alt="">
+                        <img src="assets/images/about.jpg" alt="">
                     </a>
                 </li>
             </ul>
@@ -116,18 +116,18 @@
         <div id="social">
             <ul>
                 <li>
-                    <a href="https://linkedin.com/in/signsmadueke">
-                        <img class="svg" src="assets/images/icons/social/linkedin.svg" height="20px" width="auto" alt="LinkedIn">
+                    <a target="_blank" href="https://www.behance.net/signsmadueke" title="Signs Madueke on Behance">
+                        <img class="svg" src="assets/images/icons/social/behance.svg" height="20px" width="auto" alt="Signs Madueke on Behance" title="Signs Madueke on Behance">
                     </a>
                 </li>
                 <li>
-                    <a href="https://instagram.com/signsmadueke">
-                        <img class="svg" src="assets/images/icons/social/instagram.svg" height="20px" width="auto" alt="Instagram">
+                    <a target="_blank" href="https://linkedin.com/in/signsmadueke" title="Signs Madueke on LinkedIn">
+                        <img class="svg" src="assets/images/icons/social/linkedin.svg" height="20px" width="auto" alt="Signs Madueke on LinkedIn" title="Signs Madueke on LinkedIn">
                     </a>
                 </li>
                 <li>
-                    <a href="https://dribbble.com/signsmadueke">
-                        <img class="svg" src="assets/images/icons/social/dribbble.svg" height="20px" width="auto" alt="Dribbble">
+                    <a target="_blank" href="https://instagram.com/signsmadueke" title="Signs Madueke on Instagram">
+                        <img class="svg" src="assets/images/icons/social/instagram.svg" height="20px" width="auto" alt="Signs Madueke on Instagram" title="Signs Madueke on Instagram">
                     </a>
                 </li>
             </ul>
