@@ -1632,8 +1632,6 @@ body.sidebar-opened .copyright {
   }
   #works .case-studies .case-study .cs-image {
     position: absolute;
-    height: 100px;
-    width: auto;
     right: 25px;
     bottom: -19px;
     z-index: 0;
@@ -1645,8 +1643,8 @@ body.sidebar-opened .copyright {
     left: 1.5px;
   }
   #works .case-studies .case-study .cs-image img {
-    width: 100%;
-    height: 100%;
+    width: auto;
+    height: 100px;
   }
   #works .case-studies .case-study .cs-text {
     grid-gap: 10px;
