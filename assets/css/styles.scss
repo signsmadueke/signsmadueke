@@ -1711,6 +1711,7 @@ body.sidebar-opened {
 				overflow: hidden;
 				box-shadow: 4px 4px 0px rgba(0, 0, 0, 0.2);
 				outline: 0.4px solid #cccccc;
+				cursor: zoom-in;
 
 				&::before {
 					content: "";
@@ -1849,7 +1850,7 @@ body.sidebar-opened {
 		grid-gap: 20px;
 		height: 100%;
 		width: 100%;
-		cursor: pointer;
+		cursor: zoom-in;
 		overflow: hidden;
 		outline: 1px solid #cccccc;
 
