@@ -1704,6 +1704,7 @@ body.sidebar-opened {
 			grid-auto-flow: column;
 			align-items: center;
 			place-content: center;
+			cursor: zoom-in;
 
 			.cs-image {
 				position: relative;
@@ -1852,6 +1853,7 @@ body.sidebar-opened {
 		cursor: pointer;
 		overflow: hidden;
 		outline: 1px solid #cccccc;
+		cursor: zoom-in;
 
 		img {
 			transition: all 0.5s cubic-bezier(0.5, 0, 0, 1) !important;

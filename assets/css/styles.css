@@ -1558,6 +1558,7 @@ body.sidebar-opened .copyright {
   grid-auto-flow: column;
   align-items: center;
   place-content: center;
+  cursor: zoom-in;
 }
 #works .case-studies .case-study .cs-image {
   position: relative;
@@ -1685,6 +1686,7 @@ body.sidebar-opened .copyright {
   cursor: pointer;
   overflow: hidden;
   outline: 1px solid #cccccc;
+  cursor: zoom-in;
 }
 .designs .design img {
   transition: all 0.5s cubic-bezier(0.5, 0, 0, 1) !important;
