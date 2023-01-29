@@ -1,5 +1,0 @@
-RewriteEngine On
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteRule ^([^\.]+)$ $1.php [NC,L]
-RewriteCond %{HTTP_HOST} www.signsmadueke.com
-RewriteRule (.*) http://signsmadueke.com/$1 [R=301,L]
