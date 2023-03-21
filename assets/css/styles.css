@@ -1552,7 +1552,11 @@ body.sidebar-opened .copyright {
   }
   #works .case-studies .case-study .cs-image {
     overflow: visible;
-    position: static;
+    position: sticky;
+  }
+  #works .case-studies .case-study .cs-image::before {
+    width: 0.7px;
+    left: 4px;
   }
   #works .case-studies .case-study .cs-image img {
     height: auto;

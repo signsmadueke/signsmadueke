@@ -2069,7 +2069,12 @@ body.sidebar-opened {
 
 				.cs-image {
 					overflow: visible;
-					position: static;
+					position: sticky;
+
+					&::before {
+						width: 0.7px;
+						left: 4px;
+					}
 
 					img {
 						height: auto;
