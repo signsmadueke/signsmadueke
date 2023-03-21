@@ -38,11 +38,27 @@ require_once 'inc/header.php';
                 </a>
             </div>
         </div>
+        
+        <div class="case-study">
+            <a class="cs-image" href="assets/images/placeholder/casestudies/2-lg.jpg" data-lightbox="design" data-title="The World We Once Had — by Osigwe Ahmed Momoh">
+                <img src="assets/images/placeholder/casestudies/2.jpg" data-src="assets/images/work/casestudies/2.jpg" class="lazy" alt="The World We Once Had — by Osigwe Ahmed Momoh" title="The World We Once Had — by Osigwe Ahmed Momoh" width="220px" height="auto">
+            </a>
+
+            <div class="cs-text">
+                <h4 class="category">Case Study</h4>
+                <h3 class="title">Designing a Fiction Book Cover for a Design Contest</h3>
+                <p class="description">We will look at the design process, challenges faced, and solutions implemented in designing a fiction book cover for a design contest.</p>
+                <a href="https://www.behance.net/gallery/166472527/Designing-a-Fiction-Book-Cover-for-a-Design-Contest" class="btn btn-chevron btn-link behance-link">
+                    <span>Read Case Study</span>
+                    <img class="svg" src="assets/images/icons/social/behance-colored.svg" alt="Read Case Study on Behance" height="20px" width="auto">
+                </a>
+            </div>
+        </div>
     </div>
 
     <div class="designs">
-        <a class="design" href="assets/images/work/books/1.jpg" data-lightbox="design" data-title="The World We Once Had — by Osigwe Ahmed Momoh">
-            <img src="assets/images/placeholder/books/1.jpg" data-src="assets/images/work/books/1.jpg" class="lazy" alt="The World We Once Had — by Osigwe Ahmed Momoh" title="The World We Once Had — by Osigwe Ahmed Momoh" width="400px" height="auto">
+        <a class="design" href="assets/images/work/books/1.jpg" data-lightbox="design" data-title="The Power and Art of Saying 'No' — by Dr. Jeb Ihimekpen">
+            <img src="assets/images/placeholder/books/1.jpg" data-src="assets/images/work/books/1.jpg" class="lazy" alt="The Power and Art of Saying 'No' — by Dr. Jeb Ihimekpen" title="The Power and Art of Saying 'No' — by Dr. Jeb Ihimekpen" width="400px" height="auto">
         </a>
         <a class="design" href="assets/images/work/books/2.jpg" data-lightbox="design" data-title="Grieving With Hope — by Miryam Madumere">
             <img src="assets/images/placeholder/books/2.jpg" data-src="assets/images/work/books/2.jpg" class="lazy" alt="Grieving With Hope — by Miryam Madumere" title="Grieving With Hope — by Miryam Madumere" width="400px" height="auto">

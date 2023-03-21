@@ -1693,62 +1693,341 @@ body.sidebar-opened {
 		align-items: start;
 		grid-auto-flow: column;
 
+		// .case-study {
+		// 	outline: 1px solid #cccccc;
+		// 	background-repeat: repeat;
+		// 	background-size: contain;
+		// 	padding: 50px;
+		// 	display: grid;
+		// 	grid-gap: 30px;
+		// 	grid-auto-flow: column;
+		// 	align-items: center;
+		// 	place-content: center;
+
+		// 	&:nth-child(1) {
+		// 		background: url(../images/grundge.png), #FFF2E3;
+		// 	}
+
+		// 	&:nth-child(2) {
+		// 		background: url(../images/grundge.png), #FFE7E7;
+		// 	}
+
+		// 	.cs-image {
+		// 		position: relative;
+		// 		line-height: 0;
+		// 		overflow: hidden;
+		// 		box-shadow: 4px 4px 0px rgba(0, 0, 0, 0.2);
+		// 		outline: 0.4px solid #cccccc;
+		// 		cursor: zoom-in;
+
+		// 		&::before {
+		// 			content: "";
+		// 			position: absolute;
+		// 			width: 1.14px;
+		// 			height: 100%;
+		// 			left: 5px;
+		// 			top: 0px;
+		// 			background-color: rgba(0, 0, 0, 0.1);
+		// 		}
+
+		// 		img {
+		// 			width: 220px;
+		// 		}
+		// 	}
+
+		// 	.cs-text {
+		// 		display: grid;
+		// 		grid-gap: 15px;
+		// 		max-width: 400px;
+
+		// 		.category {
+		// 			font-family: 'Space Grotesk';
+		// 			font-style: normal;
+		// 			font-weight: 600;
+		// 			font-size: 16px;
+		// 			line-height: 1;
+		// 			letter-spacing: 0.16em;
+		// 			text-transform: uppercase;
+		// 			display: block;
+		// 		}
+
+		// 		.title {
+		// 			font-family: 'Space Grotesk';
+		// 			font-style: normal;
+		// 			font-weight: 600;
+		// 			font-size: 25px;
+		// 			line-height: 1.3;
+		// 			letter-spacing: -0.03em;
+		// 			text-align: left;
+		// 		}
+
+		// 		.description {
+		// 			font-family: 'Gilroy';
+		// 			font-style: normal;
+		// 			font-weight: 400;
+		// 			line-height: 1.6;
+		// 			margin-top: -10px;
+		// 		}
+
+		// 		.behance-link {
+		// 			padding: 0px;
+		// 			border-bottom: none !important;
+
+		// 			span {
+		// 				border-bottom: 1px dashed rgba(0, 0, 0, 1) !important;
+		// 				padding: 3px 0px;
+		// 			}
+
+		// 			svg {
+		// 				width: 18px;
+		// 				height: 18px;
+
+		// 				path {
+		// 					fill: #053EFF;
+		// 				}
+		// 			}
+		// 		}
+		// 	}
+
+		// 	@media (max-width: 1000px) {
+		// 		padding: 50px 25px;
+		// 		position: relative;
+		// 		overflow: hidden;
+
+
+		// 		.cs-image {
+		// 			position: absolute;
+		// 			right: 25px;
+		// 			bottom: -19px;
+		// 			z-index: 0;
+		// 			box-shadow: 1.5px 1.5px 0px rgba(0, 0, 0, 0.1);
+		// 			outline: 0.4px solid #dddddd;
+
+		// 			&::before {
+		// 				width: 0.14px;
+		// 				left: 1.5px;
+		// 			}
+
+		// 			img {
+		// 				width: auto;
+		// 				height: 100px;
+		// 			}
+		// 		}
+
+		// 		.cs-text {
+		// 			grid-gap: 10px;
+		// 			max-width: none;
+		// 			z-index: 1;
+
+		// 			.category {
+		// 				font-size: 13px;
+		// 				display: block;
+		// 			}
+
+		// 			.title {
+		// 				font-size: 20px;
+		// 			}
+
+		// 			.description {
+		// 				font-size: 14px;
+		// 				margin-top: 0;
+		// 			}
+		// 		}
+		// 	}
+		// }
+
+
+
+		// .case-study {
+		// 	outline: 1px solid #cccccc;
+		// 	background-repeat: repeat;
+		// 	background-size: contain;
+		// 	display: grid;
+		// 	grid-gap: 30px;
+		// 	grid-auto-flow: column;
+		// 	align-items: center;
+		// 	place-content: center;
+		// 	padding: 50px 25px;
+		// 	position: relative;
+		// 	overflow: hidden;
+
+		// 	&:nth-child(1) {
+		// 		background: url(../images/grundge.png), #FFF2E3;
+		// 	}
+
+		// 	&:nth-child(2) {
+		// 		background: url(../images/grundge.png), #FFE7E7;
+		// 	}
+
+		// 	.cs-image {
+		// 		line-height: 0;
+		// 		overflow: hidden;
+		// 		position: absolute;
+		// 		cursor: zoom-in;
+		// 		right: 25px;
+		// 		bottom: -19px;
+		// 		z-index: 0;
+		// 		box-shadow: 1.5px 1.5px 0px rgba(0, 0, 0, 0.1);
+		// 		outline: 0.4px solid #dddddd;
+
+		// 		&::before {
+		// 			content: "";
+		// 			position: absolute;
+		// 			width: 0.14px;
+		// 			height: 100%;
+		// 			left: 1.5px;
+		// 			top: 0px;
+		// 			background-color: rgba(0, 0, 0, 0.1);
+		// 		}
+
+		// 		img {
+		// 			width: auto;
+		// 			height: 100px;
+		// 		}
+		// 	}
+
+		// 	.cs-text {
+		// 		display: grid;
+		// 		grid-gap: 10px;
+		// 		max-width: none;
+		// 		z-index: 1;
+
+		// 		.category {
+		// 			font-family: 'Space Grotesk';
+		// 			font-style: normal;
+		// 			font-weight: 600;
+		// 			font-size: 13px;
+		// 			display: block;
+		// 			line-height: 1;
+		// 			letter-spacing: 0.16em;
+		// 			text-transform: uppercase;
+		// 		}
+
+		// 		.title {
+		// 			font-family: 'Space Grotesk';
+		// 			font-style: normal;
+		// 			font-weight: 600;
+		// 			font-size: 20px;
+		// 			line-height: 1.3;
+		// 			letter-spacing: -0.03em;
+		// 			text-align: left;
+		// 		}
+
+		// 		.description {
+		// 			font-family: 'Gilroy';
+		// 			font-style: normal;
+		// 			font-weight: 400;
+		// 			line-height: 1.6;
+		// 			margin-top: 0px;
+		// 			font-size: 14px;
+		// 		}
+
+		// 		.behance-link {
+		// 			padding: 0px;
+		// 			border-bottom: none !important;
+
+		// 			span {
+		// 				border-bottom: 1px dashed rgba(0, 0, 0, 1) !important;
+		// 				padding: 3px 0px;
+		// 			}
+
+		// 			svg {
+		// 				width: 18px;
+		// 				height: 18px;
+
+		// 				path {
+		// 					fill: #053EFF;
+		// 				}
+		// 			}
+		// 		}
+		// 	}
+
+
+		// 	@media (min-width: 580px) {
+		// 		padding: 50px 200px 50px 25px;
+
+		// 		.cs-image {
+		// 			img {
+		// 				height: auto;
+		// 				width: 150px;
+		// 			}
+		// 		}
+		// 	}
+		// }
+
+
+
 		.case-study {
-			background: url(../images/grundge.png), #FFE7E7;
 			outline: 1px solid #cccccc;
 			background-repeat: repeat;
 			background-size: contain;
-			padding: 50px;
 			display: grid;
 			grid-gap: 30px;
 			grid-auto-flow: column;
 			align-items: center;
 			place-content: center;
-			cursor: zoom-in;
+			padding: 50px 25px;
+			position: relative;
+			overflow: hidden;
+
+			&:nth-child(1) {
+				background: url(../images/grundge.png), #FFE7E7;
+			}
+
+			&:nth-child(2) {
+				background: url(../images/grundge.png), #FFF2E3;
+			}
 
 			.cs-image {
-				position: relative;
 				line-height: 0;
 				overflow: hidden;
-				box-shadow: 4px 4px 0px rgba(0, 0, 0, 0.2);
-				outline: 0.4px solid #cccccc;
+				position: absolute;
+				cursor: zoom-in;
+				right: 25px;
+				bottom: -19px;
+				z-index: 0;
+				box-shadow: 1.5px 1.5px 0px rgba(0, 0, 0, 0.1);
+				outline: 0.4px solid #dddddd;
 
 				&::before {
 					content: "";
 					position: absolute;
-					width: 1.14px;
+					width: 0.14px;
 					height: 100%;
-					left: 5px;
+					left: 1.5px;
 					top: 0px;
 					background-color: rgba(0, 0, 0, 0.1);
 				}
 
 				img {
-					width: 220px;
+					width: auto;
+					height: 100px;
 				}
 			}
 
 			.cs-text {
 				display: grid;
-				grid-gap: 15px;
-				max-width: 400px;
+				grid-gap: 10px;
+				max-width: none;
+				z-index: 1;
+				// max-width: 400px;
 
 				.category {
 					font-family: 'Space Grotesk';
 					font-style: normal;
 					font-weight: 600;
-					font-size: 16px;
+					font-size: 13px;
+					display: block;
 					line-height: 1;
 					letter-spacing: 0.16em;
 					text-transform: uppercase;
-					display: block;
 				}
 
 				.title {
 					font-family: 'Space Grotesk';
 					font-style: normal;
 					font-weight: 600;
-					font-size: 25px;
+					font-size: 20px;
 					line-height: 1.3;
 					letter-spacing: -0.03em;
 					text-align: left;
@@ -1759,7 +2038,8 @@ body.sidebar-opened {
 					font-style: normal;
 					font-weight: 400;
 					line-height: 1.6;
-					margin-top: -10px;
+					margin-top: 0px;
+					font-size: 14px;
 				}
 
 				.behance-link {
@@ -1769,6 +2049,7 @@ body.sidebar-opened {
 					span {
 						border-bottom: 1px dashed rgba(0, 0, 0, 1) !important;
 						padding: 3px 0px;
+						font-size: 14px;
 					}
 
 					svg {
@@ -1782,51 +2063,29 @@ body.sidebar-opened {
 				}
 			}
 
-			@media (max-width: 1000px) {
-				padding: 50px 25px;
-				position: relative;
-				overflow: hidden;
 
+			@media (min-width: 580px) {
+				padding: 25px;
 
 				.cs-image {
-					position: absolute;
-					right: 25px;
-					bottom: -19px;
-					z-index: 0;
-					box-shadow: 1.5px 1.5px 0px rgba(0, 0, 0, 0.1);
-					outline: 0.4px solid #dddddd;
-
-					&::before {
-						width: 0.14px;
-						left: 1.5px;
-					}
+					overflow: visible;
+					position: static;
 
 					img {
-						width: auto;
-						height: 100px;
+						height: auto;
+						width: 150px;
 					}
 				}
 
 				.cs-text {
-					grid-gap: 10px;
-					max-width: none;
-					z-index: 1;
-
-					.category {
-						font-size: 13px;
-						display: block;
-					}
-
-					.title {
-						font-size: 20px;
-					}
-
-					.description {
-						font-size: 14px;
-						margin-top: 0;
-					}
+					max-width: 300px;
 				}
 			}
+		}
+
+		@media (max-width: 1100px) {
+			grid-auto-flow: row;
+			grid-gap: 10px;
 		}
 	}
 }
