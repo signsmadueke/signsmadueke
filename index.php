@@ -75,68 +75,23 @@ require_once 'inc/header.php';
         <a class="design" href="assets/images/work/books/6.jpg" data-lightbox="design" data-title="Treasured Facts and Tips for Adolescents — by Chinweude Ugochukwu">
             <img src="assets/images/placeholder/books/6.jpg" data-src="assets/images/work/books/6.jpg" class="lazy" alt="Treasured Facts and Tips for Adolescents — by Chinweude Ugochukwu" title="Treasured Facts and Tips for Adolescents — by Chinweude Ugochukwu" width="400px" height="auto">
         </a>
-        <a class="design" href="assets/images/work/books/7.jpg" data-lightbox="design" data-title="Beyond my Trials — by Fatimah Aderohunmu">
-            <img src="assets/images/placeholder/books/7.jpg" data-src="assets/images/work/books/7.jpg" class="lazy" alt="Beyond my Trials — by Fatimah Aderohunmu" title="Beyond my Trials — by Fatimah Aderohunmu" width="400px" height="auto">
-        </a>
-        <a class="design" href="assets/images/work/books/8.jpg" data-lightbox="design" data-title="The Pathway of Righteousness — by Emmanuel Atoe">
-            <img src="assets/images/placeholder/books/8.jpg" data-src="assets/images/work/books/8.jpg" class="lazy" alt="The Pathway of Righteousness — by Emmanuel Atoe" title="The Pathway of Righteousness — by Emmanuel Atoe" width="400px" height="auto">
-        </a>
-        <a class="design" href="assets/images/work/books/9.jpg" data-lightbox="design" data-title="Right Standing, Right Living — by Emmanuel Atoe">
-            <img src="assets/images/placeholder/books/9.jpg" data-src="assets/images/work/books/9.jpg" class="lazy" alt="Right Standing, Right Living — by Emmanuel Atoe" title="Right Standing, Right Living — by Emmanuel Atoe" width="400px" height="auto">
-        </a>
-        <a class="design" href="assets/images/work/books/10.jpg" data-lightbox="design" data-title="Raising Good Human Beings  — by Glory Madueke">
-            <img src="assets/images/placeholder/books/10.jpg" data-src="assets/images/work/books/10.jpg" class="lazy" alt="Raising Good Human Beings  — by Glory Madueke" title="Raising Good Human Beings  — by Glory Madueke" width="400px" height="auto">
-        </a>
-        <a class="design" href="assets/images/work/books/11.jpg" data-lightbox="design" data-title="Wisdom for Your Best Life — by Emmanuel Atoe">
-            <img src="assets/images/placeholder/books/11.jpg" data-src="assets/images/work/books/11.jpg" class="lazy" alt="Wisdom for Your Best Life — by Emmanuel Atoe" title="Wisdom for Your Best Life — by Emmanuel Atoe" width="400px" height="auto">
-        </a>
         <a class="design" href="assets/images/work/books/12.jpg" data-lightbox="design" data-title="Praying with the Blood of Jesus — by Prayer M. Madueke">
             <img src="assets/images/placeholder/books/12.jpg" data-src="assets/images/work/books/12.jpg" class="lazy" alt="Praying with the Blood of Jesus — by Prayer M. Madueke" title="Praying with the Blood of Jesus — by Prayer M. Madueke" width="400px" height="auto">
-        </a>
-        <a class="design" href="assets/images/work/books/13.jpg" data-lightbox="design" data-title="Evil Presence — by Prayer M. Madueke">
-            <img src="assets/images/placeholder/books/13.jpg" data-src="assets/images/work/books/13.jpg" class="lazy" alt="Evil Presence — by Prayer M. Madueke" title="Evil Presence — by Prayer M. Madueke" width="400px" height="auto">
-        </a>
-        <a class="design" href="assets/images/work/books/14.jpg" data-lightbox="design" data-title="Confront and Conquer your Enemy — by Prayer M. Madueke">
-            <img src="assets/images/placeholder/books/14.jpg" data-src="assets/images/work/books/14.jpg" class="lazy" alt="Confront and Conquer your Enemy — by Prayer M. Madueke" title="Confront and Conquer your Enemy — by Prayer M. Madueke" width="400px" height="auto">
-        </a>
-        <a class="design" href="assets/images/work/books/15.jpg" data-lightbox="design" data-title="Monitoring Spirits — by Prayer M. Madueke">
-            <img src="assets/images/placeholder/books/15.jpg" data-src="assets/images/work/books/15.jpg" class="lazy" alt="Monitoring Spirits — by Prayer M. Madueke" title="Monitoring Spirits — by Prayer M. Madueke" width="400px" height="auto">
         </a>
         <a class="design" href="assets/images/work/books/16.jpg" data-lightbox="design" data-title="The Power of Speaking in Tongues — by Prayer M. Madueke">
             <img src="assets/images/placeholder/books/16.jpg" data-src="assets/images/work/books/16.jpg" class="lazy" alt="The Power of Speaking in Tongues — by Prayer M. Madueke" title="The Power of Speaking in Tongues — by Prayer M. Madueke" width="400px" height="auto">
         </a>
-        <a class="design" href="assets/images/work/books/17.jpg" data-lightbox="design" data-title="Releasing Desitnies from the Courts of Heaven — by Prayer M. Madueke">
-            <img src="assets/images/placeholder/books/17.jpg" data-src="assets/images/work/books/17.jpg" class="lazy" alt="Releasing Desitnies from the Courts of Heaven — by Prayer M. Madueke" title="Releasing Desitnies from the Courts of Heaven — by Prayer M. Madueke" width="400px" height="auto">
+        <a class="design" href="assets/images/work/books/19.jpg" data-lightbox="design" data-title="The Battle Plan for Destroying Foundational Occultism — by Prayer M. Madueke">
+            <img src="assets/images/placeholder/books/19.jpg" data-src="assets/images/work/books/19.jpg" class="lazy" alt="The Battle Plan for Destroying Foundational Occultism — by Prayer M. Madueke" title="The Battle Plan for Destroying Foundational Occultism — by Prayer M. Madueke" width="400px" height="auto">
         </a>
         <a class="design" href="assets/images/work/books/18.jpg" data-lightbox="design" data-title="Steps to make your Marriage Heaven on Earth — by Rose Madueke">
             <img src="assets/images/placeholder/books/18.jpg" data-src="assets/images/work/books/18.jpg" class="lazy" alt="Steps to make your Marriage Heaven on Earth — by Rose Madueke" title="Steps to make your Marriage Heaven on Earth — by Rose Madueke" width="400px" height="auto">
         </a>
-        <a class="design" href="assets/images/work/books/19.jpg" data-lightbox="design" data-title="The Battle Plan for Destroying Foundational Occultism — by Prayer M. Madueke">
-            <img src="assets/images/placeholder/books/19.jpg" data-src="assets/images/work/books/19.jpg" class="lazy" alt="The Battle Plan for Destroying Foundational Occultism — by Prayer M. Madueke" title="The Battle Plan for Destroying Foundational Occultism — by Prayer M. Madueke" width="400px" height="auto">
+        <a class="design" href="assets/images/work/books/22.jpg" data-lightbox="design" data-title="Flourishing — by Dr. Jeb Ihimekpen">
+            <img src="assets/images/placeholder/books/22.jpg" data-src="assets/images/work/books/22.jpg" class="lazy" alt="Flourishing — by Dr. Jeb Ihimekpen" title="Flourishing — by Dr. Jeb Ihimekpen" width="400px" height="auto">
         </a>
-        <a class="design" href="assets/images/work/books/20.jpg" data-lightbox="design" data-title="Evil Summon — by Prayer M. Madueke">
-            <img src="assets/images/placeholder/books/20.jpg" data-src="assets/images/work/books/20.jpg" class="lazy" alt="Evil Summon — by Prayer M. Madueke" title="Evil Summon — by Prayer M. Madueke" width="400px" height="auto">
-        </a>
-        <a class="design" href="assets/images/work/books/21.jpg" data-lightbox="design" data-title="Command the Morning, Day and Night — by Prayer M. Madueke">
-            <img src="assets/images/placeholder/books/21.jpg" data-src="assets/images/work/books/21.jpg" class="lazy" alt="Command the Morning, Day and Night — by Prayer M. Madueke" title="Command the Morning, Day and Night — by Prayer M. Madueke" width="400px" height="auto">
-        </a>
-        <a class="design" href="assets/images/work/others/22.jpg" data-lightbox="design" data-title="Rollup Banner — for Strendz Cosmetics">
-            <img src="assets/images/placeholder/others/22.jpg" data-src="assets/images/work/others/22.jpg" class="lazy" alt="Rollup Banner — for Strendz Cosmetics" title="Rollup Banner — for Strendz Cosmetics" width="400px" height="auto">
-        </a>
-        <a class="design" href="assets/images/work/others/23.jpg" data-lightbox="design" data-title="Product Stickers — for Strendz Cosmetics">
-            <img src="assets/images/placeholder/others/23.jpg" data-src="assets/images/work/others/23.jpg" class="lazy" alt="Product Stickers — for Strendz Cosmetics" title="Product Stickers — for Strendz Cosmetics" width="400px" height="auto">
-        </a>
-        <a class="design" href="assets/images/work/others/24.jpg" data-lightbox="design" data-title="Thank you Card — for Strendz Cosmetics">
-            <img src="assets/images/placeholder/others/24.jpg" data-src="assets/images/work/others/24.jpg" class="lazy" alt="Thank you Card — for Strendz Cosmetics" title="Thank you Card — for Strendz Cosmetics" width="400px" height="auto">
-        </a>
-        <a class="design" href="assets/images/work/others/25.jpg" data-lightbox="design" data-title="Logo Design — for Elegarnt">
-            <img src="assets/images/placeholder/others/25.jpg" data-src="assets/images/work/others/25.jpg" class="lazy" alt="Logo Design — for Elegarnt" title="Logo Design — for Elegarnt" width="400px" height="auto">
-        </a>
-        <a class="design" href="assets/images/work/others/26.jpg" data-lightbox="design" data-title="Product Stickers — for Elegarnt">
-            <img src="assets/images/placeholder/others/26.jpg" data-src="assets/images/work/others/26.jpg" class="lazy" alt="Product Stickers — for Elegarnt" title="Product Stickers — for Elegarnt" width="400px" height="auto">
-        </a>
-        <a class="design" href="assets/images/work/others/27.jpg" data-lightbox="design" data-title="Thank you Card — for Elegarnt">
-            <img src="assets/images/placeholder/others/27.jpg" data-src="assets/images/work/others/27.jpg" class="lazy" alt="Thank you Card — for Elegarnt" title="Thank you Card — for Elegarnt" width="400px" height="auto">
+        <a class="design" href="assets/images/work/books/23.jpg" data-lightbox="design" data-title="Practical Church Growth Principle that Work — by Dr. Jeb Ihimekpen">
+            <img src="assets/images/placeholder/books/23.jpg" data-src="assets/images/work/books/23.jpg" class="lazy" alt="Practical Church Growth Principle that Work — by Dr. Jeb Ihimekpen" title="Practical Church Growth Principle that Work — by Dr. Jeb Ihimekpen" width="400px" height="auto">
         </a>
     </div>
 </section>
