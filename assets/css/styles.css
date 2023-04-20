@@ -1607,9 +1607,6 @@ body.sidebar-opened .copyright {
   filter: brightness(0.5);
   transform: scale(1.1);
 }
-.designs .design.full-width {
-  grid-column: 1/span 2;
-}
 @media (min-width: 1000px) {
   .designs .design.full-width {
     grid-column: 1/span 3;

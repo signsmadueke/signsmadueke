@@ -111,35 +111,17 @@ require_once 'inc/header.php';
         <a class="design" href="assets/images/work/others/24.jpg" data-lightbox="design" data-title="Thank you Card — for Strendz Cosmetics">
             <img src="assets/images/placeholder/others/24.jpg" data-src="assets/images/work/others/24.jpg" class="lazy" alt="Thank you Card — for Strendz Cosmetics" title="Thank you Card — for Strendz Cosmetics" width="400px" height="auto">
         </a>
-        <a class="design" href="assets/images/work/others/28.jpg" data-lightbox="design" data-title="Logo Design — for HaloTravel">
-            <img src="assets/images/placeholder/others/28.jpg" data-src="assets/images/work/others/28.jpg" class="lazy" alt="Logo Design — for HaloTravel" title="Logo Design — for HaloTravel" width="400px" height="auto">
-        </a>
-        <a class="design" href="assets/images/work/others/29.jpg" data-lightbox="design" data-title="Letterhead — for HaloTravel">
-            <img src="assets/images/placeholder/others/29.jpg" data-src="assets/images/work/others/29.jpg" class="lazy" alt="Letterhead — for HaloTravel" title="Letterhead — for HaloTravel" width="400px" height="auto">
-        </a>
-        <a class="design" href="assets/images/work/others/30.jpg" data-lightbox="design" data-title="Complimentary Card — for HaloTravel">
-            <img src="assets/images/placeholder/others/30.jpg" data-src="assets/images/work/others/30.jpg" class="lazy" alt="Complimentary Card — for HaloTravel" title="Complimentary Card — for HaloTravel" width="400px" height="auto">
-        </a>
-        <a class="design full-width" href="assets/images/work/others/31.jpg" data-lightbox="design" data-title="DevFest Flyer — for GDG Enugu">
-            <img src="assets/images/placeholder/others/31.jpg" data-src="assets/images/work/others/31.jpg" class="lazy" alt="DevFest Flyer — for GDG Enugu" title="DevFest Flyer — for GDG Enugu" width="400px" height="auto">
-        </a>
         <a class="design" href="assets/images/work/others/32.jpg" data-lightbox="design" data-title="Logo Design — for Greenage">
             <img src="assets/images/placeholder/others/32.jpg" data-src="assets/images/work/others/32.jpg" class="lazy" alt="Logo Design — for Greenage" title="Logo Design — for Greenage" width="400px" height="auto">
         </a>
         <a class="design" href="assets/images/work/others/33.jpg" data-lightbox="design" data-title="Logo Design — for Code With Samuelson">
             <img src="assets/images/placeholder/others/33.jpg" data-src="assets/images/work/others/33.jpg" class="lazy" alt="Logo Design — for Code With Samuelson" title="Logo Design — for Code With Samuelson" width="400px" height="auto">
         </a>
-        <a class="design" href="assets/images/work/others/34.jpg" data-lightbox="design" data-title="Logo Design — for Surprise Labs">
-            <img src="assets/images/placeholder/others/34.jpg" data-src="assets/images/work/others/34.jpg" class="lazy" alt="Logo Design — for Surprise Labs" title="Logo Design — for Surprise Labs" width="400px" height="auto">
-        </a>
-        <a class="design" href="assets/images/work/others/35.jpg" data-lightbox="design" data-title="Logo Design — for Sweet & Greasy Spoons">
-            <img src="assets/images/placeholder/others/35.jpg" data-src="assets/images/work/others/35.jpg" class="lazy" alt="Logo Design — for Sweet & Greasy Spoons" title="Logo Design — for Sweet & Greasy Spoons" width="400px" height="auto">
-        </a>
         <a class="design" href="assets/images/work/others/36.jpg" data-lightbox="design" data-title="Logo Design — for Delight Mix">
             <img src="assets/images/placeholder/others/36.jpg" data-src="assets/images/work/others/36.jpg" class="lazy" alt="Logo Design — for Delight Mix" title="Logo Design — for Delight Mix" width="400px" height="auto">
         </a>
-        <a class="design" href="assets/images/work/others/37.jpg" data-lightbox="design" data-title="Logo Design — for Ugee's Catering Services">
-            <img src="assets/images/placeholder/others/37.jpg" data-src="assets/images/work/others/37.jpg" class="lazy" alt="Logo Design — for Ugee's Catering Services" title="Logo Design — for Ugee's Catering Services" width="400px" height="auto">
+        <a class="design full-width" href="assets/images/work/others/31.jpg" data-lightbox="design" data-title="DevFest Flyer — for GDG Enugu">
+            <img src="assets/images/placeholder/others/31.jpg" data-src="assets/images/work/others/31.jpg" class="lazy" alt="DevFest Flyer — for GDG Enugu" title="DevFest Flyer — for GDG Enugu" width="400px" height="auto">
         </a>
     </div>
 </section>
