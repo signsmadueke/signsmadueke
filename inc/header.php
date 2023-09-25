@@ -27,8 +27,8 @@
         <div id="logo">
             <a href="/">
                 <div class="logo-text">
-                    <h3 class="logo-name">Signs Madueke</h3>
-                    <p class="logo-tagline">Graphic Designer</p>
+                    <h1 class="logo-name">Signs Madueke</h1>
+                    <h2 class="logo-tagline">Graphic Designer</h2>
                 </div>
             </a>
         </div>

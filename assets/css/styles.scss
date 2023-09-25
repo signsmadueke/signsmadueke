@@ -1051,12 +1051,12 @@ body.container {
 	// }
 
 	&.bio {
-		grid-template-rows: 82px max-content 1fr max-content;
+		grid-template-rows: 82px 1fr max-content max-content;
 		grid-row-gap: 50px;
 
 		@media (max-width: 1000px) {
 			grid-row-gap: 30px;
-			grid-template-rows: 39px max-content 1fr max-content
+			grid-template-rows: 39px 1fr max-content max-content
 		}
 	}
 
@@ -2153,16 +2153,14 @@ body.sidebar-opened {
 
 #bio-hero {
 	display: grid;
-	grid-auto-flow: column;
+	grid-auto-flow: row;
 	grid-gap: 50px;
-	grid-template-columns: 600px 1fr;
 	width: 100%;
-
-	@media (max-width: 1000px) {
-		grid-gap: 30px;
-		grid-auto-flow: row;
-		grid-template-columns: none;
-	}
+	grid-template-columns: none;
+	max-width: 500px;
+	align-self: center;
+	text-align: center;
+	justify-self: center;
 
 	.image {
 		width: 100%;
@@ -2255,6 +2253,10 @@ body.sidebar-opened {
 					padding: 0px 0px !important;
 					color: #000000;
 				}
+			}
+
+			.btn-link {
+				place-self: center;
 			}
 		}
 	}

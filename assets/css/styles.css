@@ -272,8 +272,7 @@ svg:not(:root) {
 
 blockquote {
   border-left: 2px solid #444444;
-  -webkit-margin-start: 0;
-          margin-inline-start: 0;
+  margin-inline-start: 0;
   padding: 20px;
   padding-left: 40px;
   margin: 40px 0;
@@ -957,13 +956,13 @@ body.container {
   background-color: #ffffff;
 }
 body.container.bio {
-  grid-template-rows: 82px max-content 1fr max-content;
+  grid-template-rows: 82px 1fr max-content max-content;
   grid-row-gap: 50px;
 }
 @media (max-width: 1000px) {
   body.container.bio {
     grid-row-gap: 30px;
-    grid-template-rows: 39px max-content 1fr max-content;
+    grid-template-rows: 39px 1fr max-content max-content;
   }
 }
 @media (max-width: 1000px) {
@@ -1615,17 +1614,14 @@ body.sidebar-opened .copyright {
 
 #bio-hero {
   display: grid;
-  grid-auto-flow: column;
+  grid-auto-flow: row;
   grid-gap: 50px;
-  grid-template-columns: 600px 1fr;
   width: 100%;
-}
-@media (max-width: 1000px) {
-  #bio-hero {
-    grid-gap: 30px;
-    grid-auto-flow: row;
-    grid-template-columns: none;
-  }
+  grid-template-columns: none;
+  max-width: 500px;
+  align-self: center;
+  text-align: center;
+  justify-self: center;
 }
 #bio-hero .image {
   width: 100%;
@@ -1710,6 +1706,9 @@ body.sidebar-opened .copyright {
   display: inline;
   padding: 0px 0px !important;
   color: #000000;
+}
+#bio-hero .text .body .btn-link {
+  place-self: center;
 }
 
 #error404-hero {

@@ -7,21 +7,7 @@ $extraBodyClasses = 'work';
 require_once 'inc/header.php';
 ?>
 
-<section id="work-hero">
-    <h1 class="title">
-        I'm a Graphic Designer,
-        <br>
-        Living and Creating in Lagos.
-    </h1>
-
-    <a href="bio" class="btn btn-chevron btn-link">
-        <span>Read my Bio</span>
-        <img class="svg" src="assets/images/icons/arrow-top-right.svg" alt="Arrow Top Right" height="11px" width="auto">
-    </a>
-</section>
-
 <section id="works">
-    <h2 class="title">My Work</h2>
     <div class="case-studies">
         <div class="case-study">
             <a class="cs-image" href="assets/images/placeholder/casestudies/1-lg.jpg" data-lightbox="design" data-title="Overcoming and Destroying the Spirit of Rejection and Hatred — by Prayer M. Madueke">
@@ -92,36 +78,6 @@ require_once 'inc/header.php';
         </a>
         <a class="design" href="assets/images/work/books/23.jpg" data-lightbox="design" data-title="Practical Church Growth Principle that Work — by Dr. Jeb Ihimekpen">
             <img src="assets/images/placeholder/books/23.jpg" data-src="assets/images/work/books/23.jpg" class="lazy" alt="Practical Church Growth Principle that Work — by Dr. Jeb Ihimekpen" title="Practical Church Growth Principle that Work — by Dr. Jeb Ihimekpen" width="400px" height="auto">
-        </a>
-        <a class="design" href="assets/images/work/others/25.jpg" data-lightbox="design" data-title="Logo Design — for Elegarnt">
-            <img src="assets/images/placeholder/others/25.jpg" data-src="assets/images/work/others/25.jpg" class="lazy" alt="Logo Design — for Elegarnt" title="Logo Design — for Elegarnt" width="400px" height="auto">
-        </a>
-        <a class="design" href="assets/images/work/others/26.jpg" data-lightbox="design" data-title="Product Stickers — for Elegarnt">
-            <img src="assets/images/placeholder/others/26.jpg" data-src="assets/images/work/others/26.jpg" class="lazy" alt="Product Stickers — for Elegarnt" title="Product Stickers — for Elegarnt" width="400px" height="auto">
-        </a>
-        <a class="design" href="assets/images/work/others/27.jpg" data-lightbox="design" data-title="Thank you Card — for Elegarnt">
-            <img src="assets/images/placeholder/others/27.jpg" data-src="assets/images/work/others/27.jpg" class="lazy" alt="Thank you Card — for Elegarnt" title="Thank you Card — for Elegarnt" width="400px" height="auto">
-        </a>
-        <a class="design" href="assets/images/work/others/22.jpg" data-lightbox="design" data-title="Rollup Banner — for Strendz Cosmetics">
-            <img src="assets/images/placeholder/others/22.jpg" data-src="assets/images/work/others/22.jpg" class="lazy" alt="Rollup Banner — for Strendz Cosmetics" title="Rollup Banner — for Strendz Cosmetics" width="400px" height="auto">
-        </a>
-        <a class="design" href="assets/images/work/others/23.jpg" data-lightbox="design" data-title="Product Stickers — for Strendz Cosmetics">
-            <img src="assets/images/placeholder/others/23.jpg" data-src="assets/images/work/others/23.jpg" class="lazy" alt="Product Stickers — for Strendz Cosmetics" title="Product Stickers — for Strendz Cosmetics" width="400px" height="auto">
-        </a>
-        <a class="design" href="assets/images/work/others/24.jpg" data-lightbox="design" data-title="Thank you Card — for Strendz Cosmetics">
-            <img src="assets/images/placeholder/others/24.jpg" data-src="assets/images/work/others/24.jpg" class="lazy" alt="Thank you Card — for Strendz Cosmetics" title="Thank you Card — for Strendz Cosmetics" width="400px" height="auto">
-        </a>
-        <a class="design" href="assets/images/work/others/32.jpg" data-lightbox="design" data-title="Logo Design — for Greenage">
-            <img src="assets/images/placeholder/others/32.jpg" data-src="assets/images/work/others/32.jpg" class="lazy" alt="Logo Design — for Greenage" title="Logo Design — for Greenage" width="400px" height="auto">
-        </a>
-        <a class="design" href="assets/images/work/others/33.jpg" data-lightbox="design" data-title="Logo Design — for Code With Samuelson">
-            <img src="assets/images/placeholder/others/33.jpg" data-src="assets/images/work/others/33.jpg" class="lazy" alt="Logo Design — for Code With Samuelson" title="Logo Design — for Code With Samuelson" width="400px" height="auto">
-        </a>
-        <a class="design" href="assets/images/work/others/36.jpg" data-lightbox="design" data-title="Logo Design — for Delight Mix">
-            <img src="assets/images/placeholder/others/36.jpg" data-src="assets/images/work/others/36.jpg" class="lazy" alt="Logo Design — for Delight Mix" title="Logo Design — for Delight Mix" width="400px" height="auto">
-        </a>
-        <a class="design full-width" href="assets/images/work/others/31.jpg" data-lightbox="design" data-title="DevFest Flyer — for GDG Enugu">
-            <img src="assets/images/placeholder/others/31.jpg" data-src="assets/images/work/others/31.jpg" class="lazy" alt="DevFest Flyer — for GDG Enugu" title="DevFest Flyer — for GDG Enugu" width="400px" height="auto">
         </a>
     </div>
 </section>
