@@ -21,12 +21,12 @@ $(document).ready(function () {
 	});
 
 	lightbox.option({
-		'resizeDuration': 400,
+		'resizeDuration': 200,
 		'wrapAround': true,
-		'fadeDuration': 400,
+		'fadeDuration': 200,
 		'fitImagesInViewport': true,
-		'imageFadeDuration': 400,
-		'resizeDuration': 400,
+		'imageFadeDuration': 200,
+		'resizeDuration': 200,
 		'disableScrolling': true,
 		'alwaysShowNavOnTouchDevices': true
 	});

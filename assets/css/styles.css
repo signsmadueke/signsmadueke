@@ -1454,7 +1454,7 @@ body.sidebar-opened .copyright {
   grid-auto-flow: column;
 }
 #works .case-studies .case-study {
-  outline: 1px solid #cccccc;
+  outline: 1px solid rgba(0, 0, 0, 0.15);
   background-repeat: repeat;
   background-size: contain;
   display: grid;
@@ -1465,12 +1465,13 @@ body.sidebar-opened .copyright {
   padding: 50px 25px;
   position: relative;
   overflow: hidden;
+  border-radius: 10px;
 }
 #works .case-studies .case-study:nth-child(1) {
-  background: url(../images/grundge.png), #FFE7E7;
+  background: url(../images/grundge.png), #F5F5F5;
 }
 #works .case-studies .case-study:nth-child(2) {
-  background: url(../images/grundge.png), #FFF2E3;
+  background: url(../images/grundge.png), #F5F5F5;
 }
 #works .case-studies .case-study .cs-image {
   line-height: 0;
@@ -1480,8 +1481,9 @@ body.sidebar-opened .copyright {
   right: 25px;
   bottom: -19px;
   z-index: 0;
-  box-shadow: 1.5px 1.5px 0px rgba(0, 0, 0, 0.1);
-  outline: 0.4px solid #dddddd;
+  box-shadow: -12.3px 12.3px 22.15px -7.38px rgba(0, 0, 0, 0.15);
+  outline: 0.4px solid rgba(0, 0, 0, 0.1);
+  border-radius: 3.2px 6.4px 6.4px 3.2px;
 }
 #works .case-studies .case-study .cs-image::before {
   content: "";
@@ -1550,7 +1552,6 @@ body.sidebar-opened .copyright {
     padding: 25px;
   }
   #works .case-studies .case-study .cs-image {
-    overflow: visible;
     position: sticky;
   }
   #works .case-studies .case-study .cs-image::before {
@@ -1592,8 +1593,9 @@ body.sidebar-opened .copyright {
   width: 100%;
   cursor: pointer;
   overflow: hidden;
-  outline: 1px solid #cccccc;
+  outline: 1px solid rgba(0, 0, 0, 0.15);
   cursor: zoom-in;
+  border-radius: 5px;
 }
 .designs .design img {
   transition: all 0.5s cubic-bezier(0.5, 0, 0, 1) !important;
@@ -1605,6 +1607,9 @@ body.sidebar-opened .copyright {
 .designs .design:hover img {
   filter: brightness(0.5);
   transform: scale(1.1);
+}
+.designs .design.full-width {
+  grid-column: 1/span 2;
 }
 @media (min-width: 1000px) {
   .designs .design.full-width {

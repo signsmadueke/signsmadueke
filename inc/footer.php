@@ -1,5 +1,5 @@
 <footer id="footer">
-    <p class="copyright">&copy; <span id="copyrightdate">2023</span> Signs Madueke. All rights reserved.</p>
+    <p class="copyright">&copy; <span id="copyrightdate">2024</span> Signs Madueke. All rights reserved.</p>
 
     <div id="social">
         <ul>
